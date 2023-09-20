@@ -1,5 +1,16 @@
+import { ThemeProvider } from "styled-components";
+import { defaultTheme } from "./styles/theme/default";
+import { GlobalStyles } from "./styles/global";
+import { BrowserRouter } from "react-router-dom";
+import { Router } from "./Routes";
+
 export default function App() {
   return (
-    <h1>Hello world</h1>
+    <ThemeProvider theme={defaultTheme}>
+      <GlobalStyles/>
+      <BrowserRouter>
+        <Router/>
+      </BrowserRouter>
+    </ThemeProvider>
   )
 }
