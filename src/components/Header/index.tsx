@@ -9,12 +9,12 @@ export function Header() {
 
       <HeaderCarrinho>
         <HeaderButton>
-          <MapPin weight="fill" color="#8047F8" />
+          <MapPin weight="fill" color="#8047F8" size={22}/>
           Ouricuri, PE
         </HeaderButton>
 
-        <HeaderButton>
-          <ShoppingCart color="#C47F17" weight="fill"/>
+        <HeaderButton variant='yellow' >
+          <ShoppingCart color="#C47F17" weight="fill" size={22}/>
         </HeaderButton>
       </HeaderCarrinho>
     </HeaderContainer>
