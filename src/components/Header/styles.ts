@@ -18,4 +18,7 @@ export const HeaderButton = styled.button`
   justify-content: center;
   gap: 0.2rem;
   padding: 0.5rem;
+
+  border: none;
+  color: ${({theme}) => theme.colors["brand-purple-dark"]};
 `
