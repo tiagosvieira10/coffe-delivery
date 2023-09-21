@@ -1,5 +1,10 @@
+import { Header } from "../../components/Header"
+
 export function ConfirmationPage() {
   return (
-    <h1>Confirmação</h1>
+    <>
+      <Header/>
+      <h1>Confirmação</h1>
+    </>
   )
 }
