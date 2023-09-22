@@ -78,13 +78,24 @@ export const CoffeCards = styled.div`
 `
 
 export const Coffe = styled.div`
+  flex-direction: column;
+  margin-top: 2rem;
   background-color: ${({theme}) => theme.colors["base-card"]};
   width: 14.5rem;
   height: 19rem;
 
-  
+  img {
+    align-items: center;
+    justify-content: center;
+
+    margin: -2rem 4rem 0.4rem;
+  }
+
+  button {
+    border: none;
+  }
 `
 
 export const CoffePrice = styled.div`
-
+  
 `
