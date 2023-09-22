@@ -78,22 +78,44 @@ export const CoffeCards = styled.div`
 `
 
 export const Coffe = styled.div`
+  display: flex;
   flex-direction: column;
   margin-top: 2rem;
   background-color: ${({theme}) => theme.colors["base-card"]};
   width: 14.5rem;
   height: 19rem;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 6px 36px 6px 36px; 
 
   img {
     align-items: center;
     justify-content: center;
-
-    margin: -2rem 4rem 0.4rem;
+    margin-top: -5rem;
+    margin-bottom: 0.5rem;
   }
 
   button {
     border: none;
+  } 
+
+  .itensPreparo {
+    border-radius: 100px;
+    background-color: ${({theme}) => theme.colors["brand-yellow-light"] };
+    color: ${({theme}) => theme.colors["brand-yellow-dark"]};
+
+    padding: 0.25rem 0.5rem;
+
+    font-size: ${({theme}) => theme.textSizes["components-tag"]};
+    font-family: ${({theme}) => theme.fonts.title};
   }
+
+`
+
+export const CoffeItens = styled.div`
+  display: flex;
+  gap: 0.25rem;
 `
 
 export const CoffePrice = styled.div`

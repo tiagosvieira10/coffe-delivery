@@ -1,7 +1,7 @@
 import { Header } from "../../components/Header";
 import imgCoffeDelivery from '../../assets/coffedelivery.svg'
 import { americano, arabe, capuccino, caramelo, chocolatee, coffeLeite, cubano, expresso, gelado, havaiano, irlandes, latte, macchiato, mochaccino } from "../../assets/coffes";
-import { ApresentationApp, BenefitPoints, BonusCoffe, Coffe, CoffeCards, CoffeImg, CoffeMenu, CoffePrice, HomeApresentation, HomeContainer } from "./styles";
+import { ApresentationApp, BenefitPoints, BonusCoffe, Coffe, CoffeCards, CoffeImg, CoffeItens, CoffeMenu, CoffePrice, HomeApresentation, HomeContainer } from "./styles";
 import { cafe, carrinho, embalagem, time } from "../../assets/benefitPoints";
 import { ShoppingCart } from "@phosphor-icons/react";
 
@@ -47,7 +47,9 @@ export function Home() {
         <CoffeCards>
           <Coffe>
             <img src={expresso} alt="" />
-            <button>TRADICIONAL</button>
+            <CoffeItens>
+              <button className="itensPreparo">TRADICIONAL</button>
+            </CoffeItens>
             <h4>Expresso Tradicional</h4>
             <span>O tradicional café feito com água quente e grãos moídos</span>
 
@@ -66,7 +68,9 @@ export function Home() {
 
           <Coffe>
             <img src={americano} alt="" />
-            <button>TRADICIONAL</button>
+            <CoffeItens>
+              <button className="itensPreparo">TRADICIONAL</button>
+            </CoffeItens>
             <h4>Expresso Americano</h4>
             <span>Expresso diluído, menos intenso que o tradicional</span>
 
@@ -85,7 +89,9 @@ export function Home() {
 
           <Coffe>
             <img src={caramelo} alt="" />
-            <button>TRADICIONAL</button>
+            <CoffeItens>
+              <button className="itensPreparo">TRADICIONAL</button>
+            </CoffeItens>
             <h4>Expresso Cremoso</h4>
             <span>Café expresso tradicional com espuma cremosa</span>
 
@@ -104,7 +110,10 @@ export function Home() {
 
           <Coffe>
             <img src={gelado} alt="" />
-            <button>TRADICIONAL</button>
+            <CoffeItens>
+              <button className="itensPreparo">TRADICIONAL</button>
+              <button className="itensPreparo">GELADO</button>
+            </CoffeItens>
             <h4>Expresso Gelado</h4>
             <span>Bebida preparada com café expresso e cubos de gelo</span>
 
@@ -123,7 +132,10 @@ export function Home() {
 
           <Coffe>
             <img src={coffeLeite} alt="" />
-            <button>TRADICIONAL</button>
+            <CoffeItens>
+              <button className="itensPreparo">TRADICIONAL</button>
+              <button className="itensPreparo">COM LEITE</button>
+            </CoffeItens>
             <h4>Café com Leite</h4>
             <span>Meio a meio de expresso tradicional com leite vaporizado</span>
 
@@ -142,7 +154,10 @@ export function Home() {
 
           <Coffe>
             <img src={latte} alt="" />
-            <button>TRADICIONAL</button>
+            <CoffeItens>
+              <button className="itensPreparo">TRADICIONAL</button>
+              <button className="itensPreparo">COM LEITE</button>
+            </CoffeItens>
             <h4>Latte</h4>
             <span>Uma dose de café expresso com o dobro de leite e espuma cremosa</span>
 
@@ -161,7 +176,10 @@ export function Home() {
 
           <Coffe>
             <img src={capuccino} alt="" />
-            <button>TRADICIONAL</button>
+            <CoffeItens>
+              <button className="itensPreparo">TRADICIONAL</button>
+              <button className="itensPreparo">COM LEITE</button>
+            </CoffeItens>
             <h4>Capuccino</h4>
             <span>Bebida com canela feita de doses iguais de café, leite e espuma</span>
 
@@ -180,7 +198,10 @@ export function Home() {
 
           <Coffe>
             <img src={macchiato} alt="" />
-            <button>TRADICIONAL</button>
+            <CoffeItens>
+              <button className="itensPreparo">TRADICIONAL</button>
+              <button className="itensPreparo">COM LEITE</button>
+            </CoffeItens>
             <h4>Macchiato</h4>
             <span>Café expresso misturado com um pouco de leite quente e espuma</span>
 
@@ -199,7 +220,10 @@ export function Home() {
 
           <Coffe>
             <img src={mochaccino} alt="" />
-            <button>TRADICIONAL</button>
+            <CoffeItens>
+              <button className="itensPreparo">TRADICIONAL</button>
+              <button className="itensPreparo">COM LEITE</button>
+            </CoffeItens>
             <h4>Mocaccino</h4>
             <span>Café expresso com calda de chocolate, pouco leite e espuma</span>
 
@@ -218,7 +242,10 @@ export function Home() {
 
           <Coffe>
             <img src={chocolatee} alt="" />
-            <button>TRADICIONAL</button>
+            <CoffeItens>
+              <button className="itensPreparo">ESPECIAL</button>
+              <button className="itensPreparo">COM LEITE</button>
+            </CoffeItens>
             <h4>Chocolate Quente</h4>
             <span>Bebida feita com chocolate dissolvido no leite quente e café</span>
 
@@ -237,7 +264,11 @@ export function Home() {
 
           <Coffe>
             <img src={cubano} alt="" />
-            <button>TRADICIONAL</button>
+            <CoffeItens>
+              <button className="itensPreparo">ESPECIAL</button>
+              <button className="itensPreparo">ALCOÓLICO</button>
+              <button className="itensPreparo">GELADO</button>
+            </CoffeItens>
             <h4>Cubano</h4>
             <span>Drink gelado de café expresso com rum, creme de leite e hortelã</span>
 
@@ -256,7 +287,9 @@ export function Home() {
 
           <Coffe>
             <img src={havaiano} alt="" />
-            <button>TRADICIONAL</button>
+            <CoffeItens>
+              <button className="itensPreparo">ESPECIAL</button>
+            </CoffeItens>
             <h4>Havaiano</h4>
             <span>Bebida adocicada preparada com café e leite de coco</span>
 
@@ -275,7 +308,9 @@ export function Home() {
 
           <Coffe>
             <img src={arabe} alt="" />
-            <button>TRADICIONAL</button>
+            <CoffeItens>
+              <button className="itensPreparo">ESPECIAL</button>
+            </CoffeItens>
             <h4>Árabe</h4>
             <span>uma versão do café fabricado em grãos de Coffea arabica</span>
 
@@ -294,7 +329,10 @@ export function Home() {
 
           <Coffe>
             <img src={irlandes} alt="" />
-            <button>TRADICIONAL</button>
+            <CoffeItens>
+              <button className="itensPreparo">ESPECIAL</button>
+              <button className="itensPreparo">ALCOÓLICO</button>
+            </CoffeItens>
             <h4>Irlandês</h4>
             <span>Bebida a base de café, uísque irlandês, açúcar e chantilly</span>
 
