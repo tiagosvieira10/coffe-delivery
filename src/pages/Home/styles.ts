@@ -87,13 +87,14 @@ export const Coffe = styled.div`
   align-items: center;
   justify-content: center;
 
+  gap: 1rem;
+
   border-radius: 6px 36px 6px 36px; 
 
   img {
     align-items: center;
     justify-content: center;
     margin-top: -5rem;
-    margin-bottom: 0.5rem;
   }
 
   button {
@@ -111,6 +112,20 @@ export const Coffe = styled.div`
     font-family: ${({theme}) => theme.fonts.title};
   }
 
+  h4 {
+    font-size: ${({theme}) => theme.textSizes["title-title-s"]};
+  }
+
+  span {
+    font-size: ${({theme}) => theme.textSizes["text-regular-s"]};
+    color: ${({theme}) => theme.colors["base-label"]};
+    text-align: center;
+
+    padding: 0 0.5rem;
+
+    margin-bottom: 1rem;
+  }
+
 `
 
 export const CoffeItens = styled.div`
@@ -119,5 +134,43 @@ export const CoffeItens = styled.div`
 `
 
 export const CoffePrice = styled.div`
+  display: flex;
+
+
+  h5 {
+    font-family: ${({theme}) => theme.fonts.title};
+    font-size: ${({theme}) => theme.textSizes["title-title-m"]};
+
+    margin-right: 1rem;
+
+    strong {
+      margin-right: 0.1rem;
+      font-family: ${({theme}) => theme.fonts.regular};
+      font-size: ${({theme}) => theme.textSizes["text-regular-s"]};
+    }
+  }
+
+  button {
+    margin-left: 0.25rem;
+    background-color: ${({theme}) => theme.colors["brand-purple-dark"]};
+    padding: 0.5rem;
+    border-radius: 6px;
+  }
   
+  div {
+    background-color: ${({theme}) => theme.colors["base-button"]};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.5rem;
+  
+    button {
+      color: ${({theme}) => theme.colors["brand-purple"]};
+      font-size: 1.5rem;
+      background-color: ${({theme}) => theme.colors["base-button"]};
+    }
+  }
+
+
 `
