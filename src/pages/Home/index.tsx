@@ -14,22 +14,22 @@ export function Home() {
           <BonusCoffe>
             <BenefitPoints>
               <img src={carrinho} alt="" />
-              <h3>Compra simples e segura</h3>
+              <span>Compra simples e segura</span>
             </BenefitPoints>
 
             <BenefitPoints>
               <img src={embalagem} alt="" />
-              <h3>Embalagem mantém o café intacto</h3>
+              <span>Embalagem mantém o café intacto</span>
             </BenefitPoints>
 
             <BenefitPoints>
               <img src={time} alt="" />
-              <h3>Entrega rápida e rastreada</h3>
+              <span>Entrega rápida e rastreada</span>
             </BenefitPoints>
 
             <BenefitPoints>
               <img src={cafe} alt="" />
-              <h3>O café chega fresquinho até você</h3>
+              <span>O café chega fresquinho até você</span>
             </BenefitPoints>
           </BonusCoffe>
         </ApresentationApp>
