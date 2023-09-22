@@ -1,0 +1,1 @@
+export { default as expresso } from './Image.svg'

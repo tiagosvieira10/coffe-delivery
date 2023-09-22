@@ -14,7 +14,7 @@ export const HomeApresentation = styled.div`
   }
 `
 export const ApresentationApp = styled.div`
-  h1 {
+ h1 {
     font-family: ${({theme}) => theme.fonts.title};
     font-size: ${({theme}) => theme.textSizes["title-title-xl"] };
 
@@ -59,9 +59,30 @@ export const CoffeImg = styled.div`
 
 
 export const CoffeMenu = styled.div`
+  margin: 4rem 8rem;
+  
+  h2 {
+    font-family: ${({theme}) => theme.fonts.title};
+    font-size: ${({theme}) => theme.textSizes["title-title-l"] };
+    color: ${({theme}) => theme.colors["base-title"] };
+  }
+`
+
+export const CoffeCards = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  
+  margin-top: 2rem;
+  gap: 1.5rem;
 
 `
 
 export const Coffe = styled.div`
+  background-color: ${({theme}) => theme.colors["base-card"]};
+  width: 14.5rem;
+  height: 19rem;
+`
+
+export const CoffePrice = styled.div`
 
 `
