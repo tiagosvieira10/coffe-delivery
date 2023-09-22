@@ -81,6 +81,8 @@ export const Coffe = styled.div`
   background-color: ${({theme}) => theme.colors["base-card"]};
   width: 14.5rem;
   height: 19rem;
+
+  
 `
 
 export const CoffePrice = styled.div`
