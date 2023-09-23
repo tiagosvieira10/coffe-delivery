@@ -3,7 +3,7 @@ import imgCoffeDelivery from '../../assets/coffedelivery.svg'
 import { americano, arabe, capuccino, caramelo, chocolatee, coffeLeite, cubano, expresso, gelado, havaiano, irlandes, latte, macchiato, mochaccino } from "../../assets/coffes";
 import { ApresentationApp, BenefitPoints, BonusCoffe, Coffe, CoffeCards, CoffeImg, CoffeItens, CoffeMenu, CoffePrice, HomeApresentation, HomeContainer } from "./styles";
 import { cafe, carrinho, embalagem, time } from "../../assets/benefitPoints";
-import { ShoppingCart } from "@phosphor-icons/react";
+import { Minus, Plus, ShoppingCart } from "@phosphor-icons/react";
 
 export function Home() {
   return (
@@ -56,9 +56,9 @@ export function Home() {
             <CoffePrice>
               <h5><strong>R$</strong>9,90</h5>
               <div>
-                <button>-</button>
+                <button><Minus size={14} weight="bold"/></button>
                 <p>1</p>
-                <button>+</button>
+                <button><Plus size={14} weight="bold"/></button>
               </div>
               <button>
                 <ShoppingCart color="white" weight="fill" size={22}/>
@@ -77,9 +77,9 @@ export function Home() {
             <CoffePrice>
               <h5><strong>R$</strong>9,90</h5>
               <div>
-                <button>-</button>
+                <button><Minus size={14} weight="bold"/></button>
                 <p>1</p>
-                <button>+</button>
+                <button><Plus size={14} weight="bold"/></button>
               </div>
               <button>
                 <ShoppingCart color="white" weight="fill" size={22}/>
@@ -98,9 +98,9 @@ export function Home() {
             <CoffePrice>
               <h5><strong>R$</strong>9,90</h5>
               <div>
-                <button>-</button>
+                <button><Minus size={14} weight="bold"/></button>
                 <p>1</p>
-                <button>+</button>
+                <button><Plus size={14} weight="bold"/></button>
               </div>
               <button>
                 <ShoppingCart color="white" weight="fill" size={22}/>
@@ -120,9 +120,9 @@ export function Home() {
             <CoffePrice>
               <h5><strong>R$</strong>9,90</h5>
               <div>
-                <button>-</button>
+                <button><Minus size={14} weight="bold"/></button>
                 <p>1</p>
-                <button>+</button>
+                <button><Plus size={14} weight="bold"/></button>
               </div>
               <button>
                 <ShoppingCart color="white" weight="fill" size={22}/>
@@ -142,9 +142,9 @@ export function Home() {
             <CoffePrice>
               <h5><strong>R$</strong>9,90</h5>
               <div>
-                <button>-</button>
+                <button><Minus size={14} weight="bold"/></button>
                 <p>1</p>
-                <button>+</button>
+                <button><Plus size={14} weight="bold"/></button>
               </div>
               <button>
                 <ShoppingCart color="white" weight="fill" size={22}/>
@@ -164,9 +164,9 @@ export function Home() {
             <CoffePrice>
               <h5><strong>R$</strong>9,90</h5>
               <div>
-                <button>-</button>
+                <button><Minus size={14} weight="bold"/></button>
                 <p>1</p>
-                <button>+</button>
+                <button><Plus size={14} weight="bold"/></button>
               </div>
               <button>
                 <ShoppingCart color="white" weight="fill" size={22}/>
@@ -186,9 +186,9 @@ export function Home() {
             <CoffePrice>
               <h5><strong>R$</strong>9,90</h5>
               <div>
-                <button>-</button>
+                <button><Minus size={14} weight="bold"/></button>
                 <p>1</p>
-                <button>+</button>
+                <button><Plus size={14} weight="bold"/></button>
               </div>
               <button>
                 <ShoppingCart color="white" weight="fill" size={22}/>
@@ -208,9 +208,9 @@ export function Home() {
             <CoffePrice>
               <h5><strong>R$</strong>9,90</h5>
               <div>
-                <button>-</button>
+                <button><Minus size={14} weight="bold"/></button>
                 <p>1</p>
-                <button>+</button>
+                <button><Plus size={14} weight="bold"/></button>
               </div>
               <button>
                 <ShoppingCart color="white" weight="fill" size={22}/>
@@ -230,9 +230,9 @@ export function Home() {
             <CoffePrice>
               <h5><strong>R$</strong>9,90</h5>
               <div>
-                <button>-</button>
+                <button><Minus size={14} weight="bold"/></button>
                 <p>1</p>
-                <button>+</button>
+                <button><Plus size={14} weight="bold"/></button>
               </div>
               <button>
                 <ShoppingCart color="white" weight="fill" size={22}/>
@@ -252,9 +252,9 @@ export function Home() {
             <CoffePrice>
               <h5><strong>R$</strong>9,90</h5>
               <div>
-                <button>-</button>
+                <button><Minus size={14} weight="bold"/></button>
                 <p>1</p>
-                <button>+</button>
+                <button><Plus size={14} weight="bold"/></button>
               </div>
               <button>
                 <ShoppingCart color="white" weight="fill" size={22}/>
@@ -275,9 +275,9 @@ export function Home() {
             <CoffePrice>
               <h5><strong>R$</strong>9,90</h5>
               <div>
-                <button>-</button>
+                <button><Minus size={14} weight="bold"/></button>
                 <p>1</p>
-                <button>+</button>
+                <button><Plus size={14} weight="bold"/></button>
               </div>
               <button>
                 <ShoppingCart color="white" weight="fill" size={22}/>
@@ -296,9 +296,9 @@ export function Home() {
             <CoffePrice>
               <h5><strong>R$</strong>9,90</h5>
               <div>
-                <button>-</button>
+                <button><Minus size={14} weight="bold"/></button>
                 <p>1</p>
-                <button>+</button>
+                <button><Plus size={14} weight="bold"/></button>
               </div>
               <button>
                 <ShoppingCart color="white" weight="fill" size={22}/>
@@ -317,9 +317,9 @@ export function Home() {
             <CoffePrice>
               <h5><strong>R$</strong>9,90</h5>
               <div>
-                <button>-</button>
+                <button><Minus size={14} weight="bold"/></button>
                 <p>1</p>
-                <button>+</button>
+                <button><Plus size={14} weight="bold"/></button>
               </div>
               <button>
                 <ShoppingCart color="white" weight="fill" size={22}/>
@@ -339,9 +339,9 @@ export function Home() {
             <CoffePrice>
               <h5><strong>R$</strong>9,90</h5>
               <div>
-                <button>-</button>
+                <button><Minus size={14} weight="bold"/></button>
                 <p>1</p>
-                <button>+</button>
+                <button><Plus size={14} weight="bold"/></button>
               </div>
               <button>
                 <ShoppingCart color="white" weight="fill" size={22}/>

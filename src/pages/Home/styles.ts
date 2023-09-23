@@ -54,7 +54,10 @@ export const BenefitPoints = styled.div`
 `
 
 export const CoffeImg = styled.div`
-
+ display: flex;
+ align-items: flex-end;
+ justify-content: flex-end;
+ margin: 0 auto;
 `
 
 
@@ -94,7 +97,7 @@ export const Coffe = styled.div`
   img {
     align-items: center;
     justify-content: center;
-    margin-top: -5rem;
+    margin-top: -3rem;
   }
 
   button {
@@ -123,7 +126,7 @@ export const Coffe = styled.div`
 
     padding: 0 0.5rem;
 
-    margin-bottom: 1rem;
+    /* margin-bottom: 0.5rem; */
   }
 
 `
@@ -135,7 +138,7 @@ export const CoffeItens = styled.div`
 
 export const CoffePrice = styled.div`
   display: flex;
-
+  margin-top: 1rem;
 
   h5 {
     font-family: ${({theme}) => theme.fonts.title};
@@ -146,6 +149,7 @@ export const CoffePrice = styled.div`
     strong {
       margin-right: 0.1rem;
       font-family: ${({theme}) => theme.fonts.regular};
+      color: ${({theme}) => theme.colors["base-text"]};
       font-size: ${({theme}) => theme.textSizes["text-regular-s"]};
     }
   }
@@ -162,13 +166,18 @@ export const CoffePrice = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 6px;
 
-    gap: 0.5rem;
   
     button {
+      display: flex;
       color: ${({theme}) => theme.colors["brand-purple"]};
-      font-size: 1.5rem;
+      font-size: 1rem;
+      margin: 0;
+      padding: 0.5rem;
       background-color: ${({theme}) => theme.colors["base-button"]};
+      align-items: center;
+      justify-content: center;
     }
   }
 
