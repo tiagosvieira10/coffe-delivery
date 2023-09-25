@@ -1,11 +1,27 @@
 import { Header } from "../../components/Header";
+import { CarrinhoContainer, CarrinhoMain, CoffeSelect, CompletePedido, EnderecoContainer, PagamentoContainer } from "./styles";
 
 export function CarrinhoPage() {
   return (
-    <>
+    <CarrinhoContainer>
       <Header/>
-      <h1>Carrinho</h1>
-    </>
+
+      <CarrinhoMain>
+        <CompletePedido>
+          <EnderecoContainer>
+
+          </EnderecoContainer>
+          <PagamentoContainer>
+
+          </PagamentoContainer>
+        </CompletePedido>
+
+        <CoffeSelect>
+          
+        </CoffeSelect>
+      </CarrinhoMain>
+      
+    </CarrinhoContainer>
   )
 
 }
