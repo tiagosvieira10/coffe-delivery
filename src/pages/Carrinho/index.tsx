@@ -1,6 +1,6 @@
 import { CurrencyDollar, MapPinLine } from "@phosphor-icons/react";
 import { Header } from "../../components/Header";
-import { CarrinhoContainer, CarrinhoMain, CoffeSelect, CompletePedido, EnderecoContainer, HeaderContainerCards, PagamentoContainer, ResumoPedido } from "./styles";
+import { CarrinhoContainer, CarrinhoMain, CoffeSelect, CompletePedido, EnderecoContainer, HeaderContainerCards, PagamentoContainer, ResumoPedido, TextareaEndereco } from "./styles";
 
 export function CarrinhoPage() {
   return (
@@ -19,6 +19,16 @@ export function CarrinhoPage() {
               <span>Informe o endereço onde deseja receber seu pedido</span>
             </div>
             </HeaderContainerCards>
+
+            <TextareaEndereco>
+              <textarea placeholder="CEP"></textarea>
+              <textarea placeholder="Rua"></textarea>
+              <textarea placeholder="Número"></textarea>
+              <textarea placeholder="Complemento"></textarea>
+              <textarea placeholder="Bairro"></textarea>
+              <textarea placeholder="Cidade"></textarea>
+              <textarea placeholder="UF"></textarea>
+            </TextareaEndereco>
 
           </EnderecoContainer>
 

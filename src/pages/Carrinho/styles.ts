@@ -26,6 +26,18 @@ export const EnderecoContainer = styled.div`
     display: flex;
   }
 `
+export const TextareaEndereco = styled.div`
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: wrap;
+  justify-content: space-between
+
+  textarea {
+    border: ${({theme})=> theme.colors["base-button"]};
+    background-color: ${({theme}) => theme.colors["base-input"]}; 
+    padding: 0.75rem;
+  }
+`
 
 export const HeaderContainerCards = styled.div`
   display: flex;
