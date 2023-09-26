@@ -1,6 +1,9 @@
-import { Bank, CreditCard, CurrencyDollar, MapPinLine, Money } from "@phosphor-icons/react";
+import { Bank, CreditCard, CurrencyDollar, MapPinLine, Money, Trash } from "@phosphor-icons/react";
 import { Header } from "../../components/Header";
-import { CarrinhoContainer, CarrinhoMain, CoffeSelect, CompletePedido, EnderecoContainer, HeaderContainerCards, MetodoPagamento, PagamentoContainer, ResumoPedido, TextareaEndereco } from "./styles";
+import { expresso, latte } from "../../assets/coffes";
+import { ActionForCoffeSelected, CarrinhoContainer, CarrinhoMain, CoffeSelect, CoffeSelectContainer, CompletePedido, DescriptionCoffeSelected, EnderecoContainer, HeaderContainerCards, MetodoPagamento, PagamentoContainer, ResumoCoffeSelect, ResumoPedido, ResumoValueSelect, TextareaEndereco } from "./styles";
+import  ButtonCount  from "../Home/components/ButtonQuantidade";
+
 
 export function CarrinhoPage() {
   return (
@@ -69,9 +72,59 @@ export function CarrinhoPage() {
 
         <CoffeSelect>
           <h4>Cafés selecionados</h4>
+
           <ResumoPedido>
-        
-            <button>CONFIRMAR PEDIDO</button>
+            <ResumoCoffeSelect>
+              <CoffeSelectContainer>
+                <img src={expresso} alt="" />
+                <DescriptionCoffeSelected>
+                  <span>Expresso Tradicional</span>
+
+                  <ActionForCoffeSelected>
+                    <ButtonCount/>
+                    <button className="remover">
+                      <Trash color="#8047F8" size={17}/>
+                      REMOVER
+                    </button>
+                  </ActionForCoffeSelected>
+                </DescriptionCoffeSelected>
+              </CoffeSelectContainer>
+              <h5>R$ 9,90</h5>
+            </ResumoCoffeSelect>
+
+            <ResumoCoffeSelect>
+              <CoffeSelectContainer>
+                <img src={latte} alt="" />
+                <DescriptionCoffeSelected>
+                  <span>Latte</span>
+
+                  <ActionForCoffeSelected>
+                    <ButtonCount/>
+                    <button className="remover">
+                      <Trash color="#8047F8" size={17}/>
+                      REMOVER
+                    </button>
+                  </ActionForCoffeSelected>
+                </DescriptionCoffeSelected>
+              </CoffeSelectContainer>
+              <h5>R$ 9,90</h5>
+            </ResumoCoffeSelect>
+
+            <ResumoValueSelect>
+              <div className="itens">
+                <p>Total de itens</p>
+                <p>R$ 19,80</p>
+              </div>
+              <div className="entrega">
+                <p>Entrega</p>
+                <p>R$ 5,00</p>
+              </div>
+              <div className="total">
+                <h4>Total</h4>
+                <h4>R$ 24,80</h4>
+              </div>
+            </ResumoValueSelect>
+            <button className="confirmarPedido" >CONFIRMAR PEDIDO</button>
           </ResumoPedido>
         </CoffeSelect>
       </CarrinhoMain>
