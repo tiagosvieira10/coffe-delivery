@@ -17,7 +17,7 @@ export const EnderecoContainer = styled.div`
 
   padding: 2.5rem;
   width: 40rem;
-  height: 23rem;
+  height: 24rem;
 
   border-radius: 6px;
 
@@ -111,15 +111,37 @@ export const PagamentoContainer = styled.div`
   height: 13rem;
   margin-top: 0.75rem;
   padding: 2.5rem;
+  border-radius: 6px;
 
   background-color: ${({theme}) => theme.colors["base-card"]};
+`
+export const MetodoPagamento = styled.div`
+  display: flex;
+
+  margin-top: 2rem;
+  gap: 0.75rem;
+
+  button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1;
+    padding: 1rem;
+    border: none;
+    border-radius: 6px;
+
+    font-size: ${({theme}) => theme.textSizes["components-button-s"]};
+    color: ${({theme}) => theme.colors["base-text"]};
+
+    background-color: ${({theme}) => theme.colors["base-button"]};
+  }
 `
 export const CoffeSelect = styled.div`
 
 `
 export const ResumoPedido = styled.div`
   width: 28rem;
-  height: 31rem;
+  height: 32rem;
   margin-top: 1rem;
   padding: 2.5rem;
 

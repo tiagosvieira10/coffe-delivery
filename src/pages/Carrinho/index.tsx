@@ -1,6 +1,6 @@
-import { CurrencyDollar, MapPinLine } from "@phosphor-icons/react";
+import { Bank, CreditCard, CurrencyDollar, MapPinLine, Money } from "@phosphor-icons/react";
 import { Header } from "../../components/Header";
-import { CarrinhoContainer, CarrinhoMain, CoffeSelect, CompletePedido, EnderecoContainer, HeaderContainerCards, PagamentoContainer, ResumoPedido, TextareaEndereco } from "./styles";
+import { CarrinhoContainer, CarrinhoMain, CoffeSelect, CompletePedido, EnderecoContainer, HeaderContainerCards, MetodoPagamento, PagamentoContainer, ResumoPedido, TextareaEndereco } from "./styles";
 
 export function CarrinhoPage() {
   return (
@@ -36,9 +36,6 @@ export function CarrinhoPage() {
                 <textarea placeholder="Cidade" className="city"></textarea>
                 <textarea placeholder="UF" className="uf"></textarea>
               </div>
-
-              
-          
             </TextareaEndereco>
 
           </EnderecoContainer>
@@ -51,6 +48,21 @@ export function CarrinhoPage() {
                 <span>O pagamento é feito na entrega. Escolha a forma que deseja pagar</span>
               </div>
             </HeaderContainerCards>
+
+            <MetodoPagamento>
+              <button>
+                <CreditCard color="#8047F8" size={15}/>
+                CARTÃO DE CRÉDITO
+              </button>
+              <button>
+                <Bank color="#8047F8" size={15}/>
+                CARTÃO DE DÉBITO
+              </button>
+              <button>
+                <Money color="#8047F8" size={15}/>
+                DINHEIRO
+              </button>
+            </MetodoPagamento>
 
           </PagamentoContainer>
         </CompletePedido>
