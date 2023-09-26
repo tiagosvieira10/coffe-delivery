@@ -8,6 +8,12 @@ export const CarrinhoMain = styled.div`
   display: flex;
   justify-content: space-between;
   gap: 1.5rem;
+
+  h4 {
+    font-family:  ${({theme}) => theme.textSizes["title-title-xs"]};
+    font-size: ${({theme}) => theme.textSizes["title-title-xs"]};
+    color: ${({theme}) => theme.colors["base-subtitle"]};
+  }
 `
 export const CompletePedido = styled.div`
 
@@ -17,7 +23,7 @@ export const EnderecoContainer = styled.div`
 
   padding: 2.5rem;
   width: 40rem;
-  height: 24rem;
+  /* height: 24rem; */
 
   border-radius: 6px;
 
@@ -108,7 +114,7 @@ export const HeaderContainerCards = styled.div`
 
 export const PagamentoContainer = styled.div`
   width: 40rem;
-  height: 13rem;
+  /* height: 13rem; */
   margin-top: 0.75rem;
   padding: 2.5rem;
   border-radius: 6px;

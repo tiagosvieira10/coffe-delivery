@@ -70,6 +70,7 @@ export function CarrinhoPage() {
         <CoffeSelect>
           <h4>Cafés selecionados</h4>
           <ResumoPedido>
+        
             <button>CONFIRMAR PEDIDO</button>
           </ResumoPedido>
         </CoffeSelect>
