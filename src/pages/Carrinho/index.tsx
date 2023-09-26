@@ -21,13 +21,24 @@ export function CarrinhoPage() {
             </HeaderContainerCards>
 
             <TextareaEndereco>
-              <textarea placeholder="CEP"></textarea>
-              <textarea placeholder="Rua"></textarea>
-              <textarea placeholder="Número"></textarea>
-              <textarea placeholder="Complemento"></textarea>
-              <textarea placeholder="Bairro"></textarea>
-              <textarea placeholder="Cidade"></textarea>
-              <textarea placeholder="UF"></textarea>
+              <div className="colum">
+                <textarea placeholder="CEP" className="cep"></textarea>
+                <textarea placeholder="Rua" className="rua"></textarea>
+              </div>
+
+              <div className="flex2">
+                <textarea placeholder="Número" className="number"></textarea>
+                <textarea placeholder="Complemento" className="complemento"></textarea>
+              </div>
+
+              <div className="flex3">
+                <textarea placeholder="Bairro" className="bairro"></textarea>
+                <textarea placeholder="Cidade" className="city"></textarea>
+                <textarea placeholder="UF" className="uf"></textarea>
+              </div>
+
+              
+          
             </TextareaEndereco>
 
           </EnderecoContainer>

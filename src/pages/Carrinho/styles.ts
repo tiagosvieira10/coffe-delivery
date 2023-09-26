@@ -29,13 +29,61 @@ export const EnderecoContainer = styled.div`
 export const TextareaEndereco = styled.div`
   margin-top: 2rem;
   display: flex;
-  flex-direction: wrap;
-  justify-content: space-between
+  flex-direction: column;
+  justify-content: space-between;
 
   textarea {
-    border: ${({theme})=> theme.colors["base-button"]};
+    border-color: ${({theme}) => theme.colors["base-button"]};
+    border-radius: 4px;
     background-color: ${({theme}) => theme.colors["base-input"]}; 
     padding: 0.75rem;
+    resize: none;
+  }
+  div.colum {
+    flex-direction: column;
+  }
+
+  div.flex2 {
+    gap: 0.75rem;
+  }
+
+  div.flex3 {
+    gap: 0.75rem;
+  }
+  .cep {
+    width: 12.5rem;
+    height: 3rem;
+  }
+  .rua {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 35rem;
+    height: 3rem;
+  }
+
+  .number {
+    height: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .complemento {
+    height: 3rem;
+    flex: 1;
+  }
+
+  .bairro {
+    height: 3rem;
+    width: 12.5rem;
+  }
+
+  .city {
+    height: 3rem;
+    flex: 1;
+  }
+
+  .uf {
+    width: 3.75rem;
+    height: 3rem;
   }
 `
 
