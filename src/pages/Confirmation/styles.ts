@@ -11,8 +11,6 @@ export const ConfimationMain = styled.div`
 export const ContainerEntrega = styled.div`
   border: 1px solid;
   border-radius: 6px 36px 6px 36px;
-  /* border-image: linear-gradient(to right, #DBAC2C, #8047F8);
-  border-image-slice: 1; */
   padding: 2.5rem;  
 `
 
