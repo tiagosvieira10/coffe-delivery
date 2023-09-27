@@ -2,7 +2,7 @@ import { Bank, CreditCard, CurrencyDollar, MapPinLine, Money, Trash } from "@pho
 import { Header } from "../../components/Header";
 import { expresso, latte } from "../../assets/coffes";
 import { ActionForCoffeSelected, CarrinhoContainer, CarrinhoMain, CoffeSelect, CoffeSelectContainer, CompletePedido, DescriptionCoffeSelected, EnderecoContainer, HeaderContainerCards, MetodoPagamento, PagamentoContainer, ResumoCoffeSelect, ResumoPedido, ResumoValueSelect, TextareaEndereco } from "./styles";
-import  ButtonCount  from "../Home/components/ButtonQuantidade";
+import   ButtonCount   from "../Home/components/ButtonQuantidade";
 
 
 export function CarrinhoPage() {

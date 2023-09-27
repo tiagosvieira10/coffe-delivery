@@ -4,9 +4,9 @@ import { ButtonCountContainer } from "./styles";
 export default function ButtonCount() {
   return (
     <ButtonCountContainer>
-      <button className="count"><Minus size={14} weight="bold"/></button>
+      <button><Minus size={14} weight="bold" color="#8047F8"/></button>
       <p>1</p>
-      <button className="count"><Plus size={14} weight="bold"/></button>
+      <button><Plus size={14} weight="bold" color="#8047F8"/></button>
     </ButtonCountContainer>
   )
 }
