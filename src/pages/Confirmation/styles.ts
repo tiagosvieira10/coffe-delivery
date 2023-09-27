@@ -4,7 +4,7 @@ export const ConfirmationContainer = styled.div`
 
 ` 
 export const ConfimationMain = styled.div`
-  margin: 5rem 8rem;
+  margin: 7rem 8rem;
   display: flex;
   justify-content: space-between;
 `
