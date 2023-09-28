@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 export const CarrinhoContainer = styled.main`
-
+  margin: 2rem auto;
+  max-width: 1100px;
 `
 export const CarrinhoMain = styled.div`
-  margin: 4rem 8rem;
+  margin: 4rem auto;
   display: flex;
   justify-content: space-between;
   gap: 1.5rem;
@@ -153,18 +154,24 @@ export const ResumoPedido = styled.div`
   background-color: ${({theme}) => theme.colors["base-card"]};
   border-radius: 6px 44px 6px 44px;
 
-  button.confirmarPedido {
-    border: none;
-    margin-top: 1rem;
-    background-color: ${({theme}) => theme.colors["brand-yellow"]};
-    color: ${({theme}) => theme.colors["base-white"]};
-    font-size: ${({theme}) => theme.textSizes["components-button-g"]};
+  .confirmarPedido {
+    button {
+      border: none;
+      margin-top: 1rem;
+      background-color: ${({theme}) => theme.colors["brand-yellow"]};
+      color: ${({theme}) => theme.colors["base-white"]};
+      font-size: ${({theme}) => theme.textSizes["components-button-g"]};
 
-    padding: 0.5rem 0.75rem;
-    border-radius: 6px;
+      padding: 0.5rem 0.75rem;
+      border-radius: 6px;
 
-    height: 2.8rem;
-    width: 23rem;
+      height: 2.8rem;
+      width: 23rem;
+      
+      &:hover {
+        cursor: pointer;
+      }
+    }
   }
 
 `

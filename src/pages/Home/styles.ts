@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
 export const HomeContainer = styled.main`
- 
+  margin: 2rem auto;
+  max-width: 1100px;
 `
 
 export const HomeApresentation = styled.div`
-  margin: 4rem 8rem;
+  margin: 4rem auto;
   display: flex;
 
   img {
@@ -62,7 +63,7 @@ export const CoffeImg = styled.div`
 
 
 export const CoffeMenu = styled.div`
-  margin: 4rem 8rem;
+  margin: 4rem auto;
   
   h2 {
     font-family: ${({theme}) => theme.fonts.title};
@@ -74,9 +75,10 @@ export const CoffeMenu = styled.div`
 export const CoffeCards = styled.div`
   display: flex;
   flex-wrap: wrap;
+  margin: 2rem auto;
   
-  margin-top: 2rem;
-  gap: 1.5rem;
+  /* margin-top: 2rem; */
+  gap: 3rem;
 
 `
 
@@ -159,6 +161,10 @@ export const CoffePrice = styled.div`
     background-color: ${({theme}) => theme.colors["brand-purple-dark"]};
     padding: 0.5rem;
     border-radius: 6px;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
   
   div {

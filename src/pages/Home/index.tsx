@@ -6,7 +6,9 @@ import { cafe, carrinho, embalagem, time } from "../../assets/benefitPoints";
 import { ShoppingCart } from "@phosphor-icons/react";
 import { ButtonCount } from "./components/ButtonQuantidade";
 
+
 export function Home() {
+
   return (
     <HomeContainer>
       <Header/>
@@ -74,7 +76,7 @@ export function Home() {
             <CoffePrice>
               <h5><strong>R$</strong>9,90</h5>
               <ButtonCount/>
-              <button>
+              <button className="car">
                 <ShoppingCart color="white" weight="fill" size={22}/>
               </button>
             </CoffePrice>
@@ -265,7 +267,7 @@ export function Home() {
               <button className="itensPreparo">ESPECIAL</button>
             </CoffeItens>
             <h4>Árabe</h4>
-            <span>uma versão do café fabricado em grãos de Coffea arabica</span>
+            <span>Uma versão do café fabricado em grãos de Coffea arabica</span>
 
             <CoffePrice>
               <h5><strong>R$</strong>9,90</h5>

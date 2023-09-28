@@ -16,8 +16,8 @@ export function ConfirmationPage() {
             <PedidoDescriptionConfirmation>
               <img src={localizacaoEntrega} alt="" />
               <div className="PedidoDescription">
-                <span>Entrega em <strong>Avenida Tamboril, 269</strong></span>
-                <span>Renascença - Ouricuri, PE</span>
+                <span>Entrega em <strong>Rua dos Alfeneiros, 7</strong></span>
+                <span>Centro - Ouricuri, PE</span>
               </div>
             </PedidoDescriptionConfirmation>
 

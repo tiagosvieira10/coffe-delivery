@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 export const ConfirmationContainer = styled.div`
-
+  margin: 2rem auto;
+  max-width: 1100px;
 ` 
 export const ConfimationMain = styled.div`
-  margin: 7rem 8rem;
+  margin: 7rem auto;
   display: flex;
   justify-content: space-between;
 `

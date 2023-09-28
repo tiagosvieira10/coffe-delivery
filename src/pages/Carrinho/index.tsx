@@ -3,6 +3,7 @@ import { Header } from "../../components/Header";
 import { expresso, latte } from "../../assets/coffes";
 import { ActionForCoffeSelected, CarrinhoContainer, CarrinhoMain, CoffeSelect, CoffeSelectContainer, CompletePedido, DescriptionCoffeSelected, EnderecoContainer, HeaderContainerCards, MetodoPagamento, PagamentoContainer, ResumoCoffeSelect, ResumoPedido, ResumoValueSelect, TextareaEndereco } from "./styles";
 import  {ButtonCount}  from "../Home/components/ButtonQuantidade";
+import { Link } from "react-router-dom";
 
 
 export function CarrinhoPage() {
@@ -124,7 +125,9 @@ export function CarrinhoPage() {
                 <h4>R$ 24,80</h4>
               </div>
             </ResumoValueSelect>
-            <button className="confirmarPedido" >CONFIRMAR PEDIDO</button>
+            <Link to='/confirmation' className="confirmarPedido">
+              <button>CONFIRMAR PEDIDO</button>
+            </Link>
           </ResumoPedido>
         </CoffeSelect>
       </CarrinhoMain>

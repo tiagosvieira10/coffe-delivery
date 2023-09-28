@@ -1,11 +1,23 @@
 import { MapPin, ShoppingCart  } from "@phosphor-icons/react";
 import { HeaderButton, HeaderCarrinho, HeaderContainer } from "./styles";
 import img from '../../assets/logo.svg'
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export function Header() {
+  const [cartItemCount, setCarItemCount] = useState(0);
+
+  const incrementCarCount = () => {
+    setCarItemCount(cartItemCount + 1);
+  }
+
+  const countClass = cartItemCount === 0 ? "hidden" : "count";
+
   return (
     <HeaderContainer>
-      <img src={img} alt="" />
+      <Link to='/'>
+        <img src={img} alt="" />
+      </Link>
 
       <HeaderCarrinho>
         <HeaderButton>
@@ -13,9 +25,14 @@ export function Header() {
           Ouricuri, PE
         </HeaderButton>
 
-        <HeaderButton variant='yellow' >
-          <ShoppingCart color="#C47F17" weight="fill" size={22}/>
-        </HeaderButton>
+          <HeaderButton variant='yellow'>
+            <Link to='/carrinho' className="carrinho">
+              <ShoppingCart color="#C47F17" weight="fill" size={22}/>
+              <div className={`${countClass}`}>
+                {cartItemCount}
+              </div>
+            </Link>
+          </HeaderButton>
       </HeaderCarrinho>
     </HeaderContainer>
   )
