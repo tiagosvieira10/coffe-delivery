@@ -141,8 +141,28 @@ export const MetodoPagamento = styled.div`
     color: ${({theme}) => theme.colors["base-text"]};
 
     background-color: ${({theme}) => theme.colors["base-button"]};
+    border: 1px solid transparent;
+
+    &:hover {
+      cursor: pointer;
+      border: 1px solid;
+      border-color: ${({theme}) => theme.colors["brand-purple"]};
+    }
+
+    &:active,
+    &:focus {
+      background-color: ${({theme}) => theme.colors["brand-purple"]};
+      color: ${({theme}) => theme.colors["base-white"]};
+      /* Adicione um contorno para destacar o botão quando ele recebe foco */
+      outline: none;
+    }
+
   }
+  button:focus > svg {
+    fill: ${({theme}) => theme.colors["base-white"]};
+  }  
 `
+
 export const CoffeSelect = styled.div`
 
 `
