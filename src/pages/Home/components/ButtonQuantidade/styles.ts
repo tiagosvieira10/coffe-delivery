@@ -7,7 +7,13 @@ export const ButtonCountContainer = styled.div`
   justify-content: center;
   border-radius: 6px;
 
+<<<<<<< HEAD
   button.count {
+=======
+  
+
+  button {
+>>>>>>> alteracoes
     display: flex;
     border: none;
     border-radius: 6px;
@@ -18,5 +24,9 @@ export const ButtonCountContainer = styled.div`
     background-color: ${({theme}) => theme.colors["base-button"]};
     align-items: center;
     justify-content: center;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 `

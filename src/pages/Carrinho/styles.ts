@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 export const CarrinhoContainer = styled.main`
-
+  margin: 2rem auto;
+  max-width: 1100px;
 `
 export const CarrinhoMain = styled.div`
-  margin: 4rem 8rem;
+  margin: 4rem auto;
   display: flex;
   justify-content: space-between;
   gap: 1.5rem;
@@ -44,6 +45,10 @@ export const TextareaEndereco = styled.div`
     background-color: ${({theme}) => theme.colors["base-input"]}; 
     padding: 0.75rem;
     resize: none;
+
+    &:focus {
+      border-color: ${({theme}) => theme.colors["brand-yellow"]};
+    }
   }
   div.colum {
     flex-direction: column;
@@ -140,8 +145,28 @@ export const MetodoPagamento = styled.div`
     color: ${({theme}) => theme.colors["base-text"]};
 
     background-color: ${({theme}) => theme.colors["base-button"]};
+    border: 1px solid transparent;
+
+    &:hover {
+      cursor: pointer;
+      border: 1px solid;
+      border-color: ${({theme}) => theme.colors["brand-purple"]};
+    }
+
+    &:active,
+    &:focus {
+      background-color: ${({theme}) => theme.colors["brand-purple"]};
+      color: ${({theme}) => theme.colors["base-white"]};
+      /* Adicione um contorno para destacar o botão quando ele recebe foco */
+      outline: none;
+    }
+
   }
+  button:focus > svg {
+    fill: ${({theme}) => theme.colors["base-white"]};
+  }  
 `
+
 export const CoffeSelect = styled.div`
 
 `
@@ -153,18 +178,24 @@ export const ResumoPedido = styled.div`
   background-color: ${({theme}) => theme.colors["base-card"]};
   border-radius: 6px 44px 6px 44px;
 
-  button.confirmarPedido {
-    border: none;
-    margin-top: 1rem;
-    background-color: ${({theme}) => theme.colors["brand-yellow"]};
-    color: ${({theme}) => theme.colors["base-white"]};
-    font-size: ${({theme}) => theme.textSizes["components-button-g"]};
+  .confirmarPedido {
+    button {
+      border: none;
+      margin-top: 1rem;
+      background-color: ${({theme}) => theme.colors["brand-yellow"]};
+      color: ${({theme}) => theme.colors["base-white"]};
+      font-size: ${({theme}) => theme.textSizes["components-button-g"]};
 
-    padding: 0.5rem 0.75rem;
-    border-radius: 6px;
+      padding: 0.5rem 0.75rem;
+      border-radius: 6px;
 
-    height: 2.8rem;
-    width: 23rem;
+      height: 2.8rem;
+      width: 23rem;
+      
+      &:hover {
+        cursor: pointer;
+      }
+    }
   }
 
 `

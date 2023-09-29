@@ -1,18 +1,17 @@
 import styled from "styled-components";
 
 export const ConfirmationContainer = styled.div`
-
+  margin: 2rem auto;
+  max-width: 1100px;
 ` 
 export const ConfimationMain = styled.div`
-  margin: 7rem 8rem;
+  margin: 7rem auto;
   display: flex;
   justify-content: space-between;
 `
 export const ContainerEntrega = styled.div`
   border: 1px solid;
   border-radius: 6px 36px 6px 36px;
-  /* border-image: linear-gradient(to right, #DBAC2C, #8047F8);
-  border-image-slice: 1; */
   padding: 2.5rem;  
 `
 
