@@ -41,8 +41,8 @@ export const HeaderButton = styled.button`
     justify-content: center;
     position: absolute;
 
-    margin-top: -2rem;
-    margin-right: -2rem;
+    margin-top: -2.7rem;
+    margin-left: 1rem;
     
 
     background-color: ${({theme}) => theme.colors["brand-yellow-dark"]};

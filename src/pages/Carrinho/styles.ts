@@ -45,6 +45,10 @@ export const TextareaEndereco = styled.div`
     background-color: ${({theme}) => theme.colors["base-input"]}; 
     padding: 0.75rem;
     resize: none;
+
+    &:focus {
+      border-color: ${({theme}) => theme.colors["brand-yellow"]};
+    }
   }
   div.colum {
     flex-direction: column;

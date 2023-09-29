@@ -3,7 +3,8 @@ import imgEntrega from '../../assets/Illustration.svg'
 import { ConfimationMain, ConfirmationContainer, ContainerEntrega, DescriptionConfirmation, ImgdeEntrega, PedidoDescriptionConfirmation } from "./styles"
 import { localizacaoEntrega, pagamentoEntrega, previsaoEntrega } from "../../assets/infoConfimation"
 
-export function ConfirmationPage() {
+
+export function ConfirmationPage() {  
   return (
     <ConfirmationContainer>
       <Header/>

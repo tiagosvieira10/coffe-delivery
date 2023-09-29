@@ -8,7 +8,7 @@ export function Header() {
   const [cartItemCount, setCarItemCount] = useState(0);
 
   const incrementCarCount = () => {
-    setCarItemCount(cartItemCount + 1);
+    setCarItemCount(cartItemCount + 2);
   }
 
   const countClass = cartItemCount === 0 ? "hidden" : "count";
@@ -25,7 +25,7 @@ export function Header() {
           Ouricuri, PE
         </HeaderButton>
 
-          <HeaderButton variant='yellow'>
+          <HeaderButton variant='yellow' onClick={incrementCarCount}>
             <Link to='/carrinho' className="carrinho">
               <ShoppingCart color="#C47F17" weight="fill" size={22}/>
               <div className={`${countClass}`}>
