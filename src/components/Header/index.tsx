@@ -16,7 +16,7 @@ export function Header() {
   return (
     <HeaderContainer>
       <Link to='/'>
-        <img src={img} alt="" />
+        <img src={img} alt="" width={100} height={100}/>
       </Link>
 
       <HeaderCarrinho>

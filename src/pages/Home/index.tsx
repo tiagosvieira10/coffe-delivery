@@ -14,7 +14,7 @@ export function Home() {
       <Header/>
       <HomeApresentation>
         <ApresentationApp>
-          <h1>Encontre o café perfeito para qualquer hora do dia</h1>
+          <h1>Um cafézinho no ponto para qualquer hora do dia</h1>
           <span>Com o Coffee Delivery você recebe seu café onde estiver, a qualquer hora</span>
           <BonusCoffe>
             <BenefitPoints>
@@ -46,6 +46,7 @@ export function Home() {
 
       <CoffeMenu>
         <h2>Nossos cafés</h2>
+        <input placeholder="buscar café"></input>
 
         <CoffeCards>
           <Coffe>
