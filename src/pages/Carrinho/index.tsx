@@ -17,7 +17,7 @@ export function CarrinhoPage() {
           <EnderecoContainer>
 
             <HeaderContainerCards>
-              <MapPinLine color="#C47F17" size={22}/>
+              <MapPinLine color="#F67828" size={22}/>
             <div>
               <p>Endereço de Entrega</p>
               <span>Informe o endereço onde deseja receber seu pedido</span>
@@ -46,7 +46,7 @@ export function CarrinhoPage() {
 
           <PagamentoContainer>
             <HeaderContainerCards>
-              <CurrencyDollar size={22} color="#8047F8"/>
+              <CurrencyDollar size={22} color="#F67828"/>
               <div>
                 <p>Pagamento</p>
                 <span>O pagamento é feito na entrega. Escolha a forma que deseja pagar</span>
@@ -55,15 +55,15 @@ export function CarrinhoPage() {
 
             <MetodoPagamento>
               <button>
-                <CreditCard color="#8047F8" size={15}/>
+                <CreditCard color="#F67828" size={15}/>
                 CARTÃO DE CRÉDITO
               </button>
               <button>
-                <Bank color="#8047F8" size={15}/>
+                <Bank color="#F67828" size={15}/>
                 CARTÃO DE DÉBITO
               </button>
               <button>
-                <Money color="#8047F8" size={15}/>
+                <Money color="#F67828" size={15}/>
                 DINHEIRO
               </button>
             </MetodoPagamento>
@@ -84,7 +84,7 @@ export function CarrinhoPage() {
                   <ActionForCoffeSelected>
                     <ButtonCount/>
                     <button className="remover">
-                      <Trash color="#8047F8" size={17}/>
+                      <Trash color="#F67828" size={17}/>
                       REMOVER
                     </button>
                   </ActionForCoffeSelected>
@@ -102,7 +102,7 @@ export function CarrinhoPage() {
                   <ActionForCoffeSelected>
                     <ButtonCount/>
                     <button className="remover">
-                      <Trash color="#8047F8" size={17}/>
+                      <Trash color="#F67828" size={17}/>
                       REMOVER
                     </button>
                   </ActionForCoffeSelected>

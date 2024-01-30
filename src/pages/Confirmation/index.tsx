@@ -1,5 +1,5 @@
 import { Header } from "../../components/Header"
-import imgEntrega from '../../assets/Illustration.svg'
+import imgEntrega from '../../assets/confirmationImg.svg'
 import { ConfimationMain, ConfirmationContainer, ContainerEntrega, DescriptionConfirmation, ImgdeEntrega, PedidoDescriptionConfirmation } from "./styles"
 import { localizacaoEntrega, pagamentoEntrega, previsaoEntrega } from "../../assets/infoConfimation"
 
@@ -10,7 +10,7 @@ export function ConfirmationPage() {
       <Header/>
       <ConfimationMain>
         <DescriptionConfirmation>
-          <h2>Uhu! Pedido confirmado</h2>
+          <h2>Obah! Pedido confirmado</h2>
           <p>Agora é só aguardar que logo o café chegará até você</p>
         
           <ContainerEntrega>

@@ -47,7 +47,7 @@ export const TextareaEndereco = styled.div`
     resize: none;
 
     &:focus {
-      border-color: ${({theme}) => theme.colors["brand-yellow"]};
+      border-color: ${({theme}) => theme.colors["brand-orange"]};
     }
   }
   div.colum {
@@ -150,12 +150,12 @@ export const MetodoPagamento = styled.div`
     &:hover {
       cursor: pointer;
       border: 1px solid;
-      border-color: ${({theme}) => theme.colors["brand-purple"]};
+      border-color: ${({theme}) => theme.colors["brand-orange"]};
     }
 
     &:active,
     &:focus {
-      background-color: ${({theme}) => theme.colors["brand-purple"]};
+      background-color: ${({theme}) => theme.colors["brand-orange"]};
       color: ${({theme}) => theme.colors["base-white"]};
       /* Adicione um contorno para destacar o botão quando ele recebe foco */
       outline: none;
@@ -176,13 +176,13 @@ export const ResumoPedido = styled.div`
   padding: 2.5rem;
 
   background-color: ${({theme}) => theme.colors["base-card"]};
-  border-radius: 6px 44px 6px 44px;
+  border-radius: 44px;
 
   .confirmarPedido {
     button {
       border: none;
       margin-top: 1rem;
-      background-color: ${({theme}) => theme.colors["brand-yellow"]};
+      background-color: ${({theme}) => theme.colors["brand-orange"]};
       color: ${({theme}) => theme.colors["base-white"]};
       font-size: ${({theme}) => theme.textSizes["components-button-g"]};
 

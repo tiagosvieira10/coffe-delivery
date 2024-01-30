@@ -7,11 +7,12 @@ export const ConfirmationContainer = styled.div`
 export const ConfimationMain = styled.div`
   margin: 7rem auto;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 `
 export const ContainerEntrega = styled.div`
   border: 1px solid;
-  border-radius: 6px 36px 6px 36px;
+  border-radius: 36px;
   padding: 2.5rem;  
 `
 
@@ -19,7 +20,6 @@ export const DescriptionConfirmation = styled.div`
   h2 {
     font-family: ${({theme}) => theme.fonts.title};
     font-size: ${({theme}) => theme.textSizes["title-title-l"]};
-    color: ${({theme}) => theme.colors["brand-yellow-dark"]};
     /* margin-bottom: 0.5rem; */
   }
   p {
@@ -44,5 +44,8 @@ export const PedidoDescriptionConfirmation = styled.div`
   }
 ` 
 export const ImgdeEntrega = styled.div`
-  margin-top: 7rem;
+  img {
+    height: 30rem;
+    width: 30rem;
+  }
 ` 
