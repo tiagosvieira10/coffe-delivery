@@ -18,11 +18,11 @@ export function ButtonCount() {
   return (
     <ButtonCountContainer>
       <button onClick={decrementCount}>
-        <Minus size={15} weight="bold" color="#8047F8"/>
+        <Minus size={15} weight="bold" color="#F67828"/>
       </button>
       <p>{count}</p>
       <button onClick={incrementCount}>
-        <Plus size={15} weight="bold" color="#8047F8"/>
+        <Plus size={15} weight="bold" color="#F67828"/>
       </button>
     </ButtonCountContainer>
   )

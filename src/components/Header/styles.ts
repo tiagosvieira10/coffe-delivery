@@ -15,25 +15,41 @@ export const HeaderCarrinho = styled.div`
   button.carrinho {
     border: none;
   }
+
+  input.buscarCafe {
+    border: 1px solid ${({theme}) => theme.colors["brand-orange-light"]} ;
+    border-radius: 50px;
+    padding: 0.5rem 2rem;
+  }
+
+  div.searchContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.2rem;
+
+    button {
+      border: none;
+      background: none;
+    };
+
+    button:hover {
+      cursor: pointer;
+    }
+  }
 `
 
 export const HeaderButton = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: ${({theme}) => theme.colors["brand-orange"]};
   
   gap: 0.2rem;
   padding: 0.5rem;
-  background-color: ${({theme, variant}) => {
-  if(variant === 'yellow') {
-    return theme.colors["brand-yellow-light"]
-  } else {
-    return theme.colors["brand-purple-light"]
-  }
-  }};
   border: none;
   border-radius: 6px;
-  color: ${({theme}) => theme.colors["brand-purple-dark"]};
 
   div.count {
     display: flex;
@@ -45,7 +61,7 @@ export const HeaderButton = styled.button`
     margin-left: 1rem;
     
 
-    background-color: ${({theme}) => theme.colors["brand-yellow-dark"]};
+    background-color: ${({theme}) => theme.colors["brand-orange"]};
     color: white;
 
     border-radius: 50%;

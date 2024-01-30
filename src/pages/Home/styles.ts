@@ -94,7 +94,7 @@ export const Coffe = styled.div`
 
   gap: 1rem;
 
-  border-radius: 6px 36px 6px 36px; 
+  border-radius: 30px; 
 
   img {
     align-items: center;
@@ -108,8 +108,8 @@ export const Coffe = styled.div`
 
   .itensPreparo {
     border-radius: 100px;
-    background-color: ${({theme}) => theme.colors["brand-yellow-light"] };
-    color: ${({theme}) => theme.colors["brand-yellow-dark"]};
+    background-color: ${({theme}) => theme.colors["brand-orange-light"] };
+    color: ${({theme}) => theme.colors["base-white"]};
 
     padding: 0.25rem 0.5rem;
 
@@ -158,9 +158,10 @@ export const CoffePrice = styled.div`
 
   button {
     margin-left: 0.25rem;
-    background-color: ${({theme}) => theme.colors["brand-purple-dark"]};
+    background-color: ${({theme}) => theme.colors["base-button"]};
     padding: 0.5rem;
     border-radius: 6px;
+    color: ${({theme}) => theme.colors["brand-orange"]};
 
     &:hover {
       cursor: pointer;
@@ -177,7 +178,7 @@ export const CoffePrice = styled.div`
   
     button {
       display: flex;
-      color: ${({theme}) => theme.colors["brand-purple"]};
+      color: ${({theme}) => theme.colors["brand-orange"]};
       font-size: 1rem;
       margin: 0;
       padding: 0.5rem;

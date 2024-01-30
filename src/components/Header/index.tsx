@@ -1,4 +1,4 @@
-import { MapPin, ShoppingCart  } from "@phosphor-icons/react";
+import { MagnifyingGlass, ShoppingCart  } from "@phosphor-icons/react";
 import { HeaderButton, HeaderCarrinho, HeaderContainer } from "./styles";
 import img from '../../assets/logo.svg'
 import { useState } from "react";
@@ -20,14 +20,16 @@ export function Header() {
       </Link>
 
       <HeaderCarrinho>
-        <HeaderButton>
-          <MapPin weight="fill" color="#8047F8" size={22}/>
-          Ouricuri, PE
-        </HeaderButton>
+          <div className="searchContainer">
+            <input className="buscarCafe" type="text" placeholder="Buscar café" />
+            <button type="submit">
+              <MagnifyingGlass size={24} color="#F67828" />
+            </button>
+          </div>
 
           <HeaderButton variant='yellow' onClick={incrementCarCount}>
             <Link to='/carrinho' className="carrinho">
-              <ShoppingCart color="#C47F17" weight="fill" size={22}/>
+              <ShoppingCart color="white" weight="fill" size={22}/>
               <div className={`${countClass}`}>
                 {cartItemCount}
               </div>

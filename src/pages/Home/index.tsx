@@ -15,7 +15,7 @@ export function Home() {
       <HomeApresentation>
         <ApresentationApp>
           <h1>Um cafézinho no ponto para qualquer hora do dia</h1>
-          <span>Com o Coffee Delivery você recebe seu café onde estiver, a qualquer hora</span>
+          <span>Com o Café no ponto você recebe seu café onde estiver, a qualquer hora</span>
           <BonusCoffe>
             <BenefitPoints>
               <img src={carrinho} alt="" />
@@ -46,7 +46,6 @@ export function Home() {
 
       <CoffeMenu>
         <h2>Nossos cafés</h2>
-        <input placeholder="buscar café"></input>
 
         <CoffeCards>
           <Coffe>
@@ -61,7 +60,7 @@ export function Home() {
               <h5><strong>R$</strong>9,90</h5>
               <ButtonCount/>
               <button>
-                <ShoppingCart color="white" weight="fill" size={22}/>
+                <ShoppingCart weight="fill" size={22}/>
               </button>
             </CoffePrice>
           </Coffe>
@@ -78,7 +77,7 @@ export function Home() {
               <h5><strong>R$</strong>9,90</h5>
               <ButtonCount/>
               <button className="car">
-                <ShoppingCart color="white" weight="fill" size={22}/>
+                <ShoppingCart weight="fill" size={22}/>
               </button>
             </CoffePrice>
           </Coffe>
@@ -95,7 +94,7 @@ export function Home() {
               <h5><strong>R$</strong>9,90</h5>
               <ButtonCount/>
               <button>
-                <ShoppingCart color="white" weight="fill" size={22}/>
+                <ShoppingCart weight="fill" size={22}/>
               </button>
             </CoffePrice>
           </Coffe>
@@ -113,7 +112,7 @@ export function Home() {
               <h5><strong>R$</strong>9,90</h5>
               <ButtonCount/>
               <button>
-                <ShoppingCart color="white" weight="fill" size={22}/>
+                <ShoppingCart weight="fill" size={22}/>
               </button>
             </CoffePrice>
           </Coffe>
@@ -131,7 +130,7 @@ export function Home() {
               <h5><strong>R$</strong>9,90</h5>
               <ButtonCount/>
               <button>
-                <ShoppingCart color="white" weight="fill" size={22}/>
+                <ShoppingCart weight="fill" size={22}/>
               </button>
             </CoffePrice>
           </Coffe>
@@ -149,7 +148,7 @@ export function Home() {
               <h5><strong>R$</strong>9,90</h5>
               <ButtonCount/>
               <button>
-                <ShoppingCart color="white" weight="fill" size={22}/>
+                <ShoppingCart weight="fill" size={22}/>
               </button>
             </CoffePrice>
           </Coffe>
@@ -167,7 +166,7 @@ export function Home() {
               <h5><strong>R$</strong>9,90</h5>
               <ButtonCount/>
               <button>
-                <ShoppingCart color="white" weight="fill" size={22}/>
+                <ShoppingCart weight="fill" size={22}/>
               </button>
             </CoffePrice>
           </Coffe>
@@ -185,7 +184,7 @@ export function Home() {
               <h5><strong>R$</strong>9,90</h5>
               <ButtonCount/>
               <button>
-                <ShoppingCart color="white" weight="fill" size={22}/>
+                <ShoppingCart weight="fill" size={22}/>
               </button>
             </CoffePrice>
           </Coffe>
@@ -203,7 +202,7 @@ export function Home() {
               <h5><strong>R$</strong>9,90</h5>
               <ButtonCount/>
               <button>
-                <ShoppingCart color="white" weight="fill" size={22}/>
+                <ShoppingCart weight="fill" size={22}/>
               </button>
             </CoffePrice>
           </Coffe>
@@ -221,7 +220,7 @@ export function Home() {
               <h5><strong>R$</strong>9,90</h5>
               <ButtonCount/>
               <button>
-                <ShoppingCart color="white" weight="fill" size={22}/>
+                <ShoppingCart weight="fill" size={22}/>
               </button>
             </CoffePrice>
           </Coffe>
@@ -240,7 +239,7 @@ export function Home() {
               <h5><strong>R$</strong>9,90</h5>
               <ButtonCount/>
               <button>
-                <ShoppingCart color="white" weight="fill" size={22}/>
+                <ShoppingCart weight="fill" size={22}/>
               </button>
             </CoffePrice>
           </Coffe>
@@ -257,7 +256,7 @@ export function Home() {
               <h5><strong>R$</strong>9,90</h5>
               <ButtonCount/>
               <button>
-                <ShoppingCart color="white" weight="fill" size={22}/>
+                <ShoppingCart weight="fill" size={22}/>
               </button>
             </CoffePrice>
           </Coffe>
@@ -274,7 +273,7 @@ export function Home() {
               <h5><strong>R$</strong>9,90</h5>
               <ButtonCount/>
               <button>
-                <ShoppingCart color="white" weight="fill" size={22}/>
+                <ShoppingCart weight="fill" size={22}/>
               </button>
             </CoffePrice>
           </Coffe>
@@ -292,7 +291,7 @@ export function Home() {
               <h5><strong>R$</strong>9,90</h5>
               <ButtonCount/>
               <button>
-                <ShoppingCart color="white" weight="fill" size={22}/>
+                <ShoppingCart weight="fill" size={22}/>
               </button>
             </CoffePrice>
           </Coffe>
