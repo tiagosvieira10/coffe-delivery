@@ -41,7 +41,7 @@ export function ConfirmationPage() {
         </DescriptionConfirmation>
 
         <ImgdeEntrega>
-          <img src={imgEntrega} alt="" />
+          <img src={imgEntrega} alt="" loading="eager"/>
         </ImgdeEntrega>
       </ConfimationMain>
     </ConfirmationContainer>

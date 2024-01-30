@@ -63,12 +63,38 @@ export const CoffeImg = styled.div`
 
 
 export const CoffeMenu = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   margin: 4rem auto;
   
   h2 {
     font-family: ${({theme}) => theme.fonts.title};
     font-size: ${({theme}) => theme.textSizes["title-title-l"] };
     color: ${({theme}) => theme.colors["base-title"] };
+  }
+
+  input.buscarCafe {
+    border: 1px solid ${({theme}) => theme.colors["brand-orange-light"]} ;
+    border-radius: 50px;
+    padding: 0.5rem 2rem;
+  }
+
+  div.searchContainer {
+    display: flex;
+    align-items: center;
+
+    gap: 0.2rem;
+
+    button {
+      border: none;
+      background: none;
+    };
+
+    button:hover {
+      cursor: pointer;
+    }
   }
 `
 

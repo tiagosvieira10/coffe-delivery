@@ -3,7 +3,7 @@ import imgCoffeDelivery from '../../assets/coffedelivery.svg'
 import { americano, arabe, capuccino, caramelo, chocolatee, coffeLeite, cubano, expresso, gelado, havaiano, irlandes, latte, macchiato, mochaccino } from "../../assets/coffes";
 import { ApresentationApp, BenefitPoints, BonusCoffe, Coffe, CoffeCards, CoffeImg, CoffeItens, CoffeMenu, CoffePrice, HomeApresentation, HomeContainer } from "./styles";
 import { cafe, carrinho, embalagem, time } from "../../assets/benefitPoints";
-import { ShoppingCart } from "@phosphor-icons/react";
+import { MagnifyingGlass, ShoppingCart } from "@phosphor-icons/react";
 import { ButtonCount } from "./components/ButtonQuantidade";
 
 
@@ -47,6 +47,13 @@ export function Home() {
       <CoffeMenu>
         <h2>Nossos cafés</h2>
 
+        <div className="searchContainer">
+            <input className="buscarCafe" type="text" placeholder="Buscar café" />
+            <button type="submit">
+              <MagnifyingGlass size={24} color="#F67828" />
+            </button>
+          </div>
+          
         <CoffeCards>
           <Coffe>
             <img src={expresso} alt="" />
