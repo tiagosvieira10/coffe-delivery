@@ -23,7 +23,6 @@ export function Header() {
         
           <HeaderButton variant='yellow' onClick={incrementCarCount}>
             <Link to='/carrinho' className="carrinho">
-              <p>Ir para o carrinho</p>
               <ShoppingCart color="white" weight="fill" size={22}/>
               <div className={`${countClass}`}>
                 {cartItemCount}

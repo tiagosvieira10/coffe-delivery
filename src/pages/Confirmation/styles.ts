@@ -20,7 +20,7 @@ export const DescriptionConfirmation = styled.div`
   h2 {
     font-family: ${({theme}) => theme.fonts.title};
     font-size: ${({theme}) => theme.textSizes["title-title-l"]};
-    /* margin-bottom: 0.5rem; */
+    color: ${({theme}) => theme.colors["brand-orange"]};
   }
   p {
     font-size: ${({theme}) => theme.textSizes["text-regular-l"]};
@@ -30,13 +30,8 @@ export const DescriptionConfirmation = styled.div`
 ` 
 export const PedidoDescriptionConfirmation = styled.div`
   display: flex;
+  align-items: center;
   gap: 0.75rem;
-  line-height: 1.5;
-
-  &:nth-child(1),
-  &:nth-child(2) {
-    margin-bottom: 2rem;
-  }
 
   div.PedidoDescription {
     display: flex;
