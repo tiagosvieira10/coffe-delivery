@@ -1,6 +1,6 @@
 import { MagnifyingGlass } from "@phosphor-icons/react";
 import {  CoffeMenu } from "./styles";
-import { CardCoffe } from "../CardCoffe";
+import { CardCoffe } from "../OurCoffe";
 
 export function OurCoffes(){
   return(

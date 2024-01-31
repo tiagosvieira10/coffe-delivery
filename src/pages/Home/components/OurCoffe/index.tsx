@@ -1,7 +1,7 @@
 import { ShoppingCart } from "@phosphor-icons/react";
 import { expresso, americano, caramelo, gelado, coffeLeite, latte, capuccino, macchiato, mochaccino, chocolatee, cubano, havaiano, arabe, irlandes } from "../../../../assets/coffes";
 import { ButtonCount } from "../ButtonQuantidade";
-import { CoffeCards, Coffe, CoffeItens, CoffePrice } from "./styles";
+import {  Coffe, CoffeCards, CoffeItens, CoffePrice } from "./styles";
 
 export function CardCoffe(){
   return(
@@ -251,8 +251,8 @@ export function CardCoffe(){
           <button>
             <ShoppingCart weight="fill" size={22}/>
           </button>
-        </CoffePrice>
-      </Coffe>
-    </CoffeCards>
+        </CoffePrice> 
+       </Coffe>
+    // </CoffeCards>
   )
 }

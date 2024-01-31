@@ -1,12 +1,5 @@
-// import { createContext } from "react";
+import { createContext } from "react";
 
-// export interface CartItem extends Coffees {
+const CartContext = createContext({})
 
-// }
-
-
-// interface CartContextType {
-//   cartItems: CartItem[];
-// }
-
-// export const CartContext = createContext({} as CartContextType);
+export default CartContext
