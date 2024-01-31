@@ -1,8 +1,8 @@
 import { MagnifyingGlass } from "@phosphor-icons/react";
 import {  CoffeMenu } from "./styles";
-import { CardCoffe } from "../OurCoffe";
+import { OurCoffe } from "../OurCoffe";
 
-export function OurCoffes(){
+export function CoffesMenu(){
   return(
     <CoffeMenu>
     <h2>Nossos cafés</h2>
@@ -13,7 +13,7 @@ export function OurCoffes(){
           <MagnifyingGlass size={24} color="#F67828" />
         </button>
       </div>
-      <CardCoffe/>
+      <OurCoffe/>
   </CoffeMenu>
   )
 }

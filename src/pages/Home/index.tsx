@@ -1,6 +1,6 @@
 import { Header } from "../../components/Header";
 import { ApresentationHome } from "./components/Apresentation";
-import { OurCoffes } from "./components/CoffesMenu";
+import { CoffesMenu } from "./components/CoffesMenu";
 import { HomeContainer } from "./styles";
 
 
@@ -10,7 +10,7 @@ export function Home() {
     <HomeContainer>
       <Header/>
       <ApresentationHome/>
-      <OurCoffes/>
+      <CoffesMenu/>
     </HomeContainer>
   )
 }

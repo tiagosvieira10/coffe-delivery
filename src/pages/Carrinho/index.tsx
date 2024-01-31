@@ -1,6 +1,5 @@
 import { Bank, CreditCard, CurrencyDollar, MapPinLine, Money, Trash } from "@phosphor-icons/react";
 import { Header } from "../../components/Header";
-import { expresso, latte } from "../../assets/coffes";
 import { ActionForCoffeSelected, CarrinhoContainer, CarrinhoMain, CoffeSelect, CoffeSelectContainer, CompletePedido, DescriptionCoffeSelected, EnderecoContainer, HeaderContainerCards, MetodoPagamento, PagamentoContainer, ResumoCoffeSelect, ResumoPedido, ResumoValueSelect, TextareaEndereco } from "./styles";
 import  { ButtonCount }  from "../Home/components/ButtonQuantidade";
 import { Link } from "react-router-dom";
@@ -77,7 +76,7 @@ export function CarrinhoPage() {
           <ResumoPedido>
             <ResumoCoffeSelect>
               <CoffeSelectContainer>
-                <img src={expresso} alt="" />
+                {/* <img src={expresso} alt="" /> */}
                 <DescriptionCoffeSelected>
                   <span>Expresso Tradicional</span>
 
@@ -95,7 +94,7 @@ export function CarrinhoPage() {
 
             <ResumoCoffeSelect>
               <CoffeSelectContainer>
-                <img src={latte} alt="" />
+                {/* <img src={latte} alt="" /> */}
                 <DescriptionCoffeSelected>
                   <span>Latte</span>
 

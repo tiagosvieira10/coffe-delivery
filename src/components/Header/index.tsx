@@ -21,7 +21,7 @@ export function Header() {
 
       <HeaderCarrinho>
         
-          <HeaderButton variant='yellow' onClick={incrementCarCount}>
+          <HeaderButton onClick={incrementCarCount}>
             <Link to='/carrinho' className="carrinho">
               <ShoppingCart color="white" weight="fill" size={22}/>
               <div className={`${countClass}`}>
