@@ -46,5 +46,9 @@ export const ActionForCoffeSelected = styled.div`
     background-color: ${({theme}) => theme.colors["base-button"]};
     font-size: ${({theme}) => theme.textSizes["components-button-s"]};
     color: ${({theme}) => theme.colors["base-text"]};
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 `

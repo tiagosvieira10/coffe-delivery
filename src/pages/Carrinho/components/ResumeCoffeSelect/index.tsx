@@ -4,12 +4,27 @@ import { ResumoCoffeSelect, CoffeSelectContainer, DescriptionCoffeSelected, Acti
 import { CartItem } from "../../../../contexts/CartContexts"
 import { formatMoney } from "../../../../utils/formatMoney"
 import { ButtonCount } from "../../../Home/components/ButtonQuantidade"
+import { useCart } from "../../../../hooks/useCarts"
 
 interface CoffeeCartCardProps {
   coffee: CartItem
 }
 
 export function ResumeCoffeSelect({ coffee }: CoffeeCartCardProps) {
+  const {changeCartItemQuantity, removeCartItem} = useCart();
+
+  function handleIncrease(){
+    changeCartItemQuantity(coffee.id, "increase")
+  }
+
+  function handleDecrease(){
+    changeCartItemQuantity(coffee.id, "decrease")
+  }
+
+  function handleRemove(){
+    removeCartItem(coffee.id);
+  }
+
   const coffeeTotal = coffee.price * coffee.quantity;
   const formattedPrice = formatMoney(coffeeTotal);
   return(
@@ -20,8 +35,8 @@ export function ResumeCoffeSelect({ coffee }: CoffeeCartCardProps) {
           <span>{coffee.name}</span>
 
           <ActionForCoffeSelected>
-            <ButtonCount quantity={coffee.quantity}/>
-            <button className="remover">
+            <ButtonCount onIncrease={handleIncrease} onDecrease={handleDecrease} quantity={coffee.quantity}/>
+            <button className="remover" onClick={handleRemove}>
               <Trash color="#F67828" size={17}/>
               REMOVER
             </button>
