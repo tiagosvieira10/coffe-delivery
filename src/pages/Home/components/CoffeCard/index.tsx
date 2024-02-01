@@ -12,6 +12,7 @@ export interface Coffee {
   description: string;
   photo: string;
   price: number;
+  data: string;
 }
 
 interface CoffeeProps {
@@ -65,6 +66,7 @@ export function CoffeCard({ coffee }: CoffeeProps) {
         <ShoppingCart weight="fill" size={22}/>
       </button>
     </CoffePrice>
+    <p className="data">{coffee.data}</p>
     </Coffe>
   )
 }

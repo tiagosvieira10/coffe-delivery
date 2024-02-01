@@ -6,6 +6,7 @@ export const coffees = [
     description: "O tradicional café feito com água quente e grãos moídos",
     photo: "Image.svg",
     price: 9.9,
+    data: "adicionado 05/02/2022"
   },
   {
     id: 2,
@@ -14,6 +15,7 @@ export const coffees = [
     description: "Expresso diluído, menos intenso que o tradicional",
     photo: "Image-1.svg",
     price: 9.9,
+    data: "adicionado 05/02/2022"
   },
   {
     id: 3,
@@ -22,6 +24,7 @@ export const coffees = [
     description: "Café expresso tradicional com espuma cremosa",
     photo: "Image-2.svg",
     price: 9.9,
+    data: "adicionado 05/02/2022"
   },
   {
     id: 4,
@@ -30,6 +33,7 @@ export const coffees = [
     description: "Bebida preparada com café expresso e cubos de gelo",
     photo: "Image-3.svg",
     price: 9.9,
+    data: "adicionado 05/02/2022"
   },
   {
     id: 5,
@@ -38,6 +42,7 @@ export const coffees = [
     description: "Meio a meio de expresso tradicional com leite vaporizado",
     photo: "Image-4.svg",
     price: 9.90,
+    data: "adicionado 06/02/2022"
   },
   {
     id: 6,
@@ -47,6 +52,7 @@ export const coffees = [
       "Uma dose de café expresso com o dobro de leite e espuma cremosa",
     photo: "Image-5.svg",
     price: 9.90,
+    data: "adicionado 06/02/2022"
   },
   {
     id: 7,
@@ -56,6 +62,7 @@ export const coffees = [
       "Bebida com canela feita de doses iguais de café, leite e espuma",
     photo: "Image-6.svg",
     price: 9.9,
+    data: "adicionado 08/02/2022"
   },
   {
     id: 8,
@@ -65,6 +72,7 @@ export const coffees = [
       "Café expresso misturado com um pouco de leite quente e espuma",
     photo: "Image-7.svg",
     price: 9.9,
+    data: "adicionado 08/02/2022"
   },
   {
     id: 9,
@@ -73,6 +81,7 @@ export const coffees = [
     description: "Café expresso com calda de chocolate, pouco leite e espuma",
     photo: "Image-8.svg",
     price: 9.9,
+    data: "adicionado 08/02/2022"
   },
   {
     id: 10,
@@ -81,6 +90,7 @@ export const coffees = [
     description: "Bebida feita com chocolate dissolvido no leite quente e café",
     photo: "Image-9.svg",
     price: 9.9,
+    data: "adicionado 12/02/2022"
   },
   {
     id: 11,
@@ -90,6 +100,7 @@ export const coffees = [
       "Drink gelado de café expresso com rum, creme de leite e hortelã",
     photo: "Image-10.svg",
     price: 9.9,
+    data: "adicionado 12/02/2022"
   },
   {
     id: 12,
@@ -98,6 +109,7 @@ export const coffees = [
     description: "Bebida adocicada preparada com café e leite de coco",
     photo: "Image-11.svg",
     price: 9.9,
+    data: "adicionado 12/02/2022"
   },
   {
     id: 13,
@@ -106,6 +118,7 @@ export const coffees = [
     description: "Bebida preparada com grãos de café árabe e especiarias",
     photo: "Image-12.svg",
     price: 9.9,
+    data: "adicionado 12/02/2022"
   },
   {
     id: 14,
@@ -114,5 +127,6 @@ export const coffees = [
     description: "Bebida a base de café, uísque irlandês, açúcar e chantilly",
     photo: "Image-13.svg",
     price: 9.9,
+    data: "adicionado 12/02/2022"
   },
 ];

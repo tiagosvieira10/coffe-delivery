@@ -49,6 +49,12 @@ export const Coffe = styled.div`
     /* margin-bottom: 0.5rem; */
   }
 
+  p.data {
+    font-size: 0.7rem;
+    color: ${({theme}) => theme.colors["base-label"]}; 
+    opacity: 0.5;
+  }
+
 `
 
 export const CoffeItens = styled.div`
