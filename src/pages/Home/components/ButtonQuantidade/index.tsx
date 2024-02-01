@@ -1,6 +1,5 @@
 import { Minus, Plus } from "@phosphor-icons/react";
 import { ButtonCountContainer } from "./styles";
-// import { useState } from "react";
 
 interface QuantityInputProps {
   quantity: number;

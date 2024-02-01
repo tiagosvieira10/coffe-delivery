@@ -7,17 +7,10 @@ export const ButtonCountContainer = styled.div`
   justify-content: center;
   border-radius: 6px;
 
-<<<<<<< HEAD
   button.count {
-=======
-  
-
-  button {
->>>>>>> alteracoes
     display: flex;
     border: none;
     border-radius: 6px;
-    color: ${({theme}) => theme.colors["brand-purple"]};
     font-size: 1rem;
     margin: 0;
     padding: 0.5rem;
