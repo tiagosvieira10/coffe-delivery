@@ -1,18 +1,11 @@
 import { ShoppingCart  } from "@phosphor-icons/react";
 import { HeaderButton, HeaderCarrinho, HeaderContainer } from "./styles";
 import img from '../../assets/logo.svg'
-import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useCart } from "../../hooks/useCarts";
 
 export function Header() {
-  const [cartItemCount, setCarItemCount] = useState(0);
-
-  const incrementCarCount = () => {
-    setCarItemCount(cartItemCount + 2);
-  }
-
-  const countClass = cartItemCount === 0 ? "hidden" : "count";
-
+  const {cartQuantity} = useCart();
   return (
     <HeaderContainer>
       <Link to='/'>
@@ -21,12 +14,10 @@ export function Header() {
 
       <HeaderCarrinho>
         
-          <HeaderButton onClick={incrementCarCount}>
+          <HeaderButton>
             <Link to='/carrinho' className="carrinho">
+              {cartQuantity >= 1 && <span>{cartQuantity}</span>}
               <ShoppingCart color="white" weight="fill" size={22}/>
-              <div className={`${countClass}`}>
-                {cartItemCount}
-              </div>
             </Link>
           </HeaderButton>
       </HeaderCarrinho>

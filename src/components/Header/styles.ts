@@ -48,14 +48,14 @@ export const HeaderButton = styled.button`
   border: none;
   border-radius: 50px;
 
-  div.count {
+  span {
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
 
-    margin-top: -2.7rem;
-    margin-left: 1rem;
+    margin-top: -2.5rem;
+    margin-left: 1.2rem;
     
 
     background-color: ${({theme}) => theme.colors["brand-orange"]};
