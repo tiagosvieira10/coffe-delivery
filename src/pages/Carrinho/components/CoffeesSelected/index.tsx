@@ -5,7 +5,7 @@ import { ResumeValue } from "../ResumeValue";
 import { useCart } from "../../../../hooks/useCarts";
 
 export function CoffeesSelected() {
-  const { cartItems, cartQuantity } = useCart();
+  const { cartItems, cartQuantity, cleanCart } = useCart();
   return(
     <CoffeSelect>
           <h4>Cafés selecionados</h4>
@@ -16,7 +16,7 @@ export function CoffeesSelected() {
             ))}
            <ResumeValue/>
             <Link to='/confirmation' className="confirmarPedido">
-              <button disabled= {cartQuantity <= 0} >CONFIRMAR PEDIDO</button>
+              <button disabled= {cartQuantity <= 0} onClick={cleanCart}>CONFIRMAR PEDIDO</button>
             </Link>
           </ResumoPedido>
         </CoffeSelect>
