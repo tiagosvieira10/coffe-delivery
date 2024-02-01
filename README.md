@@ -1,27 +1,14 @@
-# Coffe Delivery app
+# Café no Ponto Delivery
 
-Ecommerce para tomar aquele café gostosinho!
-Construido com TypeScript, React e Vite. 
+Bem-vindo ao Café no Ponto Delivery, café gostosinho e no ponto!
+Construido com TypeScript, React, Vite e Styled-Components. ContextAPI para gereciamento de carrinho.
 
-Currently, two official plugins are available:
+## Deploy da aplicação
+
+Acesse nossa aplicação e descubra o prazer de pedir um café delicioso, exatamente do jeito que você gosta.
+
+[Café no Ponto - Clique aqui](https://coffe-delivery-six-sooty.vercel.app/) 
+
+Que bom compartilhar com você a paixão por cafés incríveis. Sinta-se em casa e desfrute de uma experiência única no Café no Ponto Delivery!
 
 
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list

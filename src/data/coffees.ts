@@ -5,7 +5,7 @@ export const coffees = [
     name: "Expresso Tradicional",
     description: "O tradicional café feito com água quente e grãos moídos",
     photo: "Image.svg",
-    price: 9.9,
+    price: 6.9,
     data: "adicionado 05/02/2022"
   },
   {
@@ -14,7 +14,7 @@ export const coffees = [
     name: "Expresso Americano",
     description: "Expresso diluído, menos intenso que o tradicional",
     photo: "Image-1.svg",
-    price: 9.9,
+    price: 7.9,
     data: "adicionado 05/02/2022"
   },
   {
@@ -23,7 +23,7 @@ export const coffees = [
     name: "Expresso Cremoso",
     description: "Café expresso tradicional com espuma cremosa",
     photo: "Image-2.svg",
-    price: 9.9,
+    price: 9.5,
     data: "adicionado 05/02/2022"
   },
   {
@@ -32,7 +32,7 @@ export const coffees = [
     name: "Expresso Gelado",
     description: "Bebida preparada com café expresso e cubos de gelo",
     photo: "Image-3.svg",
-    price: 9.9,
+    price: 9.0,
     data: "adicionado 05/02/2022"
   },
   {
@@ -41,7 +41,7 @@ export const coffees = [
     name: "Café com Leite",
     description: "Meio a meio de expresso tradicional com leite vaporizado",
     photo: "Image-4.svg",
-    price: 9.90,
+    price: 6.5,
     data: "adicionado 06/02/2022"
   },
   {
@@ -51,7 +51,7 @@ export const coffees = [
     description:
       "Uma dose de café expresso com o dobro de leite e espuma cremosa",
     photo: "Image-5.svg",
-    price: 9.90,
+    price: 8.9,
     data: "adicionado 06/02/2022"
   },
   {
@@ -61,7 +61,7 @@ export const coffees = [
     description:
       "Bebida com canela feita de doses iguais de café, leite e espuma",
     photo: "Image-6.svg",
-    price: 9.9,
+    price: 9.5,
     data: "adicionado 08/02/2022"
   },
   {
@@ -71,7 +71,7 @@ export const coffees = [
     description:
       "Café expresso misturado com um pouco de leite quente e espuma",
     photo: "Image-7.svg",
-    price: 9.9,
+    price: 9.5,
     data: "adicionado 08/02/2022"
   },
   {
@@ -80,7 +80,7 @@ export const coffees = [
     name: "Mocaccino",
     description: "Café expresso com calda de chocolate, pouco leite e espuma",
     photo: "Image-8.svg",
-    price: 9.9,
+    price: 9.5,
     data: "adicionado 08/02/2022"
   },
   {
@@ -89,7 +89,7 @@ export const coffees = [
     name: "Chocolate Quente",
     description: "Bebida feita com chocolate dissolvido no leite quente e café",
     photo: "Image-9.svg",
-    price: 9.9,
+    price: 8.5,
     data: "adicionado 12/02/2022"
   },
   {
@@ -108,7 +108,7 @@ export const coffees = [
     name: "Havaiano",
     description: "Bebida adocicada preparada com café e leite de coco",
     photo: "Image-11.svg",
-    price: 9.9,
+    price: 9.5,
     data: "adicionado 12/02/2022"
   },
   {
@@ -117,7 +117,7 @@ export const coffees = [
     name: "Árabe",
     description: "Bebida preparada com grãos de café árabe e especiarias",
     photo: "Image-12.svg",
-    price: 9.9,
+    price: 14.9,
     data: "adicionado 12/02/2022"
   },
   {
@@ -126,7 +126,7 @@ export const coffees = [
     name: "Irlandês",
     description: "Bebida a base de café, uísque irlandês, açúcar e chantilly",
     photo: "Image-13.svg",
-    price: 9.9,
+    price: 16.7,
     data: "adicionado 12/02/2022"
   },
 ];
