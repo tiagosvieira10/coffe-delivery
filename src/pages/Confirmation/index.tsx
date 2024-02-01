@@ -15,7 +15,7 @@ export function ConfirmationPage() {
         
           <ContainerEntrega>
             <PedidoDescriptionConfirmation>
-              <img src={previsaoEntrega} alt="" />
+              <img src={previsaoEntrega} alt="" loading="lazy"/>
               <div className="PedidoDescription">
                 <span>Previsão de entrega</span>
                 <strong>20 min - 30 min</strong>
