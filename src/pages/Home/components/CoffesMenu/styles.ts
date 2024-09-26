@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const CoffeMenu = styled.div`
   display: flex;
@@ -9,12 +9,12 @@ export const CoffeMenu = styled.div`
   
   h2 {
     font-family: ${({theme}) => theme.fonts.title};
-    font-size: ${({theme}) => theme.textSizes["title-title-l"] };
-    color: ${({theme}) => theme.colors["base-title"] };
+    font-size: ${({theme}) => theme.textSizes["title-title-l"]};
+    color: ${({theme}) => theme.colors["base-title"]};
   }
 
   input.buscarCafe {
-    border: 1px solid ${({theme}) => theme.colors["brand-orange-light"]} ;
+    border: 1px solid ${({theme}) => theme.colors["brand-orange-light"]};
     border-radius: 50px;
     padding: 0.5rem 2rem;
   }
@@ -22,29 +22,52 @@ export const CoffeMenu = styled.div`
   div.searchContainer {
     display: flex;
     align-items: center;
-
     gap: 0.2rem;
 
     button {
       border: none;
       background: none;
-    };
+    }
 
     button:hover {
       cursor: pointer;
     }
   }
-`
+
+  @media (max-width: 768px) {
+    margin: 6rem;
+    
+    
+    h2 {
+      font-size: ${({theme}) => theme.textSizes["title-title-m"]};
+    }
+
+    input.buscarCafe {
+      padding: 0.5rem 1rem;
+      width: 100%;
+    }
+
+    div.searchContainer {
+      flex-direction: column;
+      align-items: stretch;
+      button {
+        margin-top: 0.5rem;
+      }
+    }
+  }
+`;
 
 export const CoffeCards = styled.div`
   display: flex;
   flex-wrap: wrap;
   margin: 2rem auto;
-  
-  /* margin-top: 2rem; */
   gap: 3rem;
 
-`
+  @media (max-width: 768px) {
+    gap: 0.5rem;
+    justify-content: center;
+  }
+`;
 
 export const Coffe = styled.div`
   display: flex;
@@ -55,10 +78,8 @@ export const Coffe = styled.div`
   height: 19rem;
   align-items: center;
   justify-content: center;
-
   gap: 1rem;
-
-  border-radius: 30px; 
+  border-radius: 30px;
 
   img {
     align-items: center;
@@ -68,15 +89,13 @@ export const Coffe = styled.div`
 
   button {
     border: none;
-  } 
+  }
 
   .itensPreparo {
     border-radius: 100px;
-    background-color: ${({theme}) => theme.colors["brand-orange-light"] };
+    background-color: ${({theme}) => theme.colors["brand-orange-light"]};
     color: ${({theme}) => theme.colors["base-white"]};
-
     padding: 0.25rem 0.5rem;
-
     font-size: ${({theme}) => theme.textSizes["components-tag"]};
     font-family: ${({theme}) => theme.fonts.title};
   }
@@ -89,18 +108,56 @@ export const Coffe = styled.div`
     font-size: ${({theme}) => theme.textSizes["text-regular-s"]};
     color: ${({theme}) => theme.colors["base-label"]};
     text-align: center;
-
     padding: 0 0.5rem;
-
-    /* margin-bottom: 0.5rem; */
   }
 
-`
+  @media (max-width: 768px) {
+    width: 12rem;
+    height: auto;
+    padding: 1rem;
+
+    img {
+      width: 100px;
+      height: auto;
+      margin-top: -2rem;
+    }
+
+    .itensPreparo {
+      font-size: ${({theme}) => theme.textSizes["text-regular-s"]};
+      padding: 0.2rem 0.4rem;
+    }
+
+    h4 {
+      font-size: ${({theme}) => theme.textSizes["text-regular-l"]};
+    }
+
+    span {
+      font-size: ${({theme}) => theme.textSizes["text-regular-s"]};
+      padding: 0 0.3rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    width: 10rem;
+
+    h4 {
+      font-size: ${({theme}) => theme.textSizes["text-regular-m"]};
+    }
+
+    span {
+      font-size: ${({theme}) => theme.textSizes["text-regular-s"]};
+    }
+  }
+`;
 
 export const CoffeItens = styled.div`
   display: flex;
   gap: 0.25rem;
-`
+
+  @media (max-width: 768px) {
+    gap: 0.1rem;
+  }
+`;
 
 export const CoffePrice = styled.div`
   display: flex;
@@ -109,7 +166,6 @@ export const CoffePrice = styled.div`
   h5 {
     font-family: ${({theme}) => theme.fonts.title};
     font-size: ${({theme}) => theme.textSizes["title-title-m"]};
-
     margin-right: 1rem;
 
     strong {
@@ -139,7 +195,6 @@ export const CoffePrice = styled.div`
     justify-content: center;
     border-radius: 6px;
 
-  
     button {
       display: flex;
       color: ${({theme}) => theme.colors["brand-orange"]};
@@ -152,5 +207,21 @@ export const CoffePrice = styled.div`
     }
   }
 
+  @media (max-width: 768px) {
+    h5 {
+      font-size: ${({theme}) => theme.textSizes["title-title-s"]};
+    }
 
-`
+    button {
+      padding: 0.3rem;
+      font-size: ${({theme}) => theme.textSizes["text-regular-s"]};
+    }
+
+    div {
+      button {
+        font-size: ${({theme}) => theme.textSizes["text-regular-s"]};
+        padding: 0.3rem;
+      }
+    }
+  }
+`;

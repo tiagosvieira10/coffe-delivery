@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const Coffe = styled.div`
   display: flex;
@@ -9,9 +9,7 @@ export const Coffe = styled.div`
   height: 19rem;
   align-items: center;
   justify-content: center;
-
   gap: 1rem;
-
   border-radius: 30px; 
 
   img {
@@ -26,11 +24,9 @@ export const Coffe = styled.div`
 
   .itensPreparo {
     border-radius: 100px;
-    background-color: ${({theme}) => theme.colors["brand-orange-light"] };
+    background-color: ${({theme}) => theme.colors["brand-orange-light"]};
     color: ${({theme}) => theme.colors["base-white"]};
-
     padding: 0.25rem 0.5rem;
-
     font-size: ${({theme}) => theme.textSizes["components-tag"]};
     font-family: ${({theme}) => theme.fonts.title};
   }
@@ -43,19 +39,55 @@ export const Coffe = styled.div`
     font-size: ${({theme}) => theme.textSizes["text-regular-s"]};
     color: ${({theme}) => theme.colors["base-label"]};
     text-align: center;
-
     padding: 0 0.5rem;
-
-    /* margin-bottom: 0.5rem; */
   }
 
   p.data {
     font-size: 0.7rem;
-    color: ${({theme}) => theme.colors["base-label"]}; 
+    color: ${({theme}) => theme.colors["base-label"]};
     opacity: 0.5;
   }
 
-`
+  @media (max-width: 768px) {
+    width: 12rem;
+    height: auto;
+    padding: 1rem;
+
+    img {
+      width: 100px;
+      height: auto;
+      margin-top: -2rem;
+    }
+
+    .itensPreparo {
+      font-size: ${({theme}) => theme.textSizes["text-regular-s"]};
+      display: none;
+      padding: 0.2rem 0.4rem;
+    }
+
+    h4 {
+      font-size: ${({theme}) => theme.textSizes["text-regular-l"]};
+    }
+
+    span {
+      font-size: ${({theme}) => theme.textSizes["text-regular-s"]};
+      padding: 0 0.3rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    width: 12rem;
+    gap: 0.3rem;
+
+    h4 {
+      font-size: ${({theme}) => theme.textSizes["text-regular-m"]};
+    }
+
+    span {
+      font-size: ${({theme}) => theme.textSizes["text-regular-s"]};
+    }
+  }
+`;
 
 export const CoffeItens = styled.div`
   display: flex;
@@ -65,7 +97,16 @@ export const CoffeItens = styled.div`
     gap: 0.5rem;
     display: flex;
   }
-`
+
+  @media (max-width: 768px) {
+    gap: 0.1rem;
+
+    button {
+      padding: 0.3rem;
+      font-size: ${({theme}) => theme.textSizes["text-regular-s"]};
+    }
+  }
+`;
 
 export const CoffePrice = styled.div`
   display: flex;
@@ -74,7 +115,6 @@ export const CoffePrice = styled.div`
   h5 {
     font-family: ${({theme}) => theme.fonts.title};
     font-size: ${({theme}) => theme.textSizes["title-title-m"]};
-
     margin-right: 1rem;
 
     strong {
@@ -104,7 +144,6 @@ export const CoffePrice = styled.div`
     justify-content: center;
     border-radius: 6px;
 
-  
     button {
       display: flex;
       color: ${({theme}) => theme.colors["brand-orange"]};
@@ -117,5 +156,21 @@ export const CoffePrice = styled.div`
     }
   }
 
+  @media (max-width: 768px) {
+    h5 {
+      font-size: ${({theme}) => theme.textSizes["title-title-s"]};
+    }
 
-`
+    button {
+      padding: 0.3rem;
+      font-size: ${({theme}) => theme.textSizes["text-regular-s"]};
+    }
+
+    div {
+      button {
+        font-size: ${({theme}) => theme.textSizes["text-regular-s"]};
+        padding: 0.3rem;
+      }
+    }
+  }
+`;
