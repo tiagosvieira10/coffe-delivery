@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const HeaderContainer = styled.header`
   display: flex;
@@ -14,6 +14,12 @@ export const HeaderContainer = styled.header`
   top: 0;
   left: 0;
   z-index: 5;
+
+
+  @media (max-width: 768px) {
+    height: 5rem; 
+    padding: 0 1rem; 
+  }
 `
 
 export const HeaderCarrinho = styled.div`
@@ -22,6 +28,16 @@ export const HeaderCarrinho = styled.div`
 
   button.carrinho {
     border: none;
+  }
+
+  /* Responsividade */
+  @media (max-width: 768px) {
+    gap: 0.5rem; /* Reduzindo o espaço entre os elementos */
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: column; /* Mudando para coluna em telas muito pequenas */
+    gap: 0.2rem;
   }
 `
 
@@ -41,6 +57,7 @@ export const HeaderButton = styled.button`
       color: white;
     }
   }  
+
   background-color: ${({theme}) => theme.colors["brand-orange"]};
   
   gap: 0.2rem;
@@ -56,7 +73,6 @@ export const HeaderButton = styled.button`
 
     margin-top: -2.5rem;
     margin-left: 1.2rem;
-    
 
     background-color: ${({theme}) => theme.colors["brand-orange"]};
     color: white;
@@ -70,5 +86,21 @@ export const HeaderButton = styled.button`
 
   .hidden {
     display: none;
+  }
+
+  /* Responsividade */
+  @media (max-width: 768px) {
+    padding: 0.4rem 0.8rem; /* Ajustando o padding para telas menores */
+    font-size: ${({theme}) => theme.textSizes["text-regular-s"]}; /* Ajustando o tamanho do texto */
+  }
+
+  @media (max-width: 480px) {
+    padding: 0.3rem 0.6rem; /* Ajustando mais o padding */
+    span {
+      width: 1rem; /* Ajustando o tamanho do indicador */
+      height: 1rem;
+      margin-top: -2rem;
+      margin-left: 1rem;
+    }
   }
 `
